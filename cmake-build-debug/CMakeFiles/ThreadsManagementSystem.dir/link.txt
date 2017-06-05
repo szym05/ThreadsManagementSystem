@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o  -o ThreadsManagementSystem -lpthread 

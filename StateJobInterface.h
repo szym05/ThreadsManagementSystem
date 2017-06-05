@@ -1,0 +1,14 @@
+
+
+#ifndef THREADSMANAGEMENTSYSTEM_STATEJOBINTERFACE_H
+#define THREADSMANAGEMENTSYSTEM_STATEJOBINTERFACE_H
+
+namespace ThreadsManagementSystem {
+    class StateJobInterface{
+
+    };
+}
+
+
+
+#endif //THREADSMANAGEMENTSYSTEM_STATEJOBINTERFACE_H

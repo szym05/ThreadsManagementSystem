@@ -1,0 +1,3 @@
+/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir
