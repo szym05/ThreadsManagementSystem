@@ -18,13 +18,8 @@ namespace ThreadsManagementSystem {
 
         virtual void addMessage(std::unique_ptr<MessageInterface> message) = 0;
 
-        /*
-        *:brief: This method is executed by Slave.
-        *:params:
-        * 	theEnd - Function have to be called when the task is complete.
-        *:return: none.
-        */
-        virtual void operator()( std::function<void()> theEnd ) = 0;
+
+        virtual int run() = 0;
 
         virtual bool isRunning() = 0;
     };

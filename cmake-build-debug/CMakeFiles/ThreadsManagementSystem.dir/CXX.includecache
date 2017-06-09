@@ -6,37 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryInterface.h
-memory
--
-JobInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
-StateJobInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
-
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
-memory
--
-JobManagmentInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagmentInterface.h
-
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagmentInterface.h
-memory
--
-SynchronizedQueue.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/SynchronizedQueue.h
-TaskInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
-MessageInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
-StateTaskInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
-
 /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
 memory
 -
 Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
+SlaveInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
+TaskInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
+StateTaskInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
+mutex
+-
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
 ThreadInterface.h
@@ -46,30 +30,10 @@ StateTaskInterface.h
 TaskInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
 
-/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
-TaskInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
-StateJobInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
-StateTaskInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
-
-/home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
-
 /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
 Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 memory
--
-
-/home/szymon/CLionProjects/ThreadsManagementSystem/SynchronizedQueue.h
-queue
--
-condition_variable
--
-mutex
--
-stdexcept
 -
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
@@ -103,12 +67,6 @@ memory
 /home/szymon/CLionProjects/ThreadsManagementSystem/main.cpp
 iostream
 -
-JobInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
-JobFactoryInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryInterface.h
-SlaveInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
-SlaveManagementInterface.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
+Slave.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
 

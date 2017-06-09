@@ -1,6 +1,6 @@
 #include <iostream>
 
-
+#include "Slave.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

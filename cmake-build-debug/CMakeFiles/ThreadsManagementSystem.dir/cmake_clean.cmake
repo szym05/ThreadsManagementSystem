@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o"
   "ThreadsManagementSystem.pdb"
   "ThreadsManagementSystem"
 )

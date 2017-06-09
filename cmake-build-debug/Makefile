@@ -123,6 +123,60 @@ ThreadsManagementSystem/fast:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/build
 .PHONY : ThreadsManagementSystem/fast
 
+Slave.o: Slave.cpp.o
+
+.PHONY : Slave.o
+
+# target to build an object file
+Slave.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o
+.PHONY : Slave.cpp.o
+
+Slave.i: Slave.cpp.i
+
+.PHONY : Slave.i
+
+# target to preprocess a source file
+Slave.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.i
+.PHONY : Slave.cpp.i
+
+Slave.s: Slave.cpp.s
+
+.PHONY : Slave.s
+
+# target to generate assembly for a file
+Slave.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.s
+.PHONY : Slave.cpp.s
+
+SlaveManagement.o: SlaveManagement.cpp.o
+
+.PHONY : SlaveManagement.o
+
+# target to build an object file
+SlaveManagement.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o
+.PHONY : SlaveManagement.cpp.o
+
+SlaveManagement.i: SlaveManagement.cpp.i
+
+.PHONY : SlaveManagement.i
+
+# target to preprocess a source file
+SlaveManagement.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.i
+.PHONY : SlaveManagement.cpp.i
+
+SlaveManagement.s: SlaveManagement.cpp.s
+
+.PHONY : SlaveManagement.s
+
+# target to generate assembly for a file
+SlaveManagement.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.s
+.PHONY : SlaveManagement.cpp.s
+
 ThreadInterface.o: ThreadInterface.cpp.o
 
 .PHONY : ThreadInterface.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ThreadsManagementSystem"
+	@echo "... Slave.o"
+	@echo "... Slave.i"
+	@echo "... Slave.s"
+	@echo "... SlaveManagement.o"
+	@echo "... SlaveManagement.i"
+	@echo "... SlaveManagement.s"
 	@echo "... ThreadInterface.o"
 	@echo "... ThreadInterface.i"
 	@echo "... ThreadInterface.s"

@@ -9,21 +9,15 @@
 namespace ThreadsManagementSystem {
     class SlaveInterface{
     protected:
-        /*
-        *:brief: Function have to be called when the task is complete.
-        *:params:
-        * 	theEnd -
-        *:return: none.
-        */
-        virtual void theEnd() = 0;
+        virtual void run() = 0;
 
     public:
 
         virtual std::unique_ptr<StateTaskInterface> getStateTask() = 0;
 
-        virtual void terminate()=0;
+        virtual bool terminate()=0;
 
-        virtual void start(std::unique_ptr<TaskInterface> task) = 0;
+        virtual bool start(std::unique_ptr<TaskInterface> &&task) = 0;
 
         virtual bool isExecutingTask() = 0;
     };

@@ -9,8 +9,6 @@
 
 namespace ThreadsManagementSystem {
 
-
-
     template<typename T>
     class SynchronizedQueue {
     private:
