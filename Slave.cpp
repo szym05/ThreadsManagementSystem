@@ -11,9 +11,10 @@ std::unique_ptr<ThreadsManagementSystem::StateTaskInterface> ThreadsManagementSy
 }
 
 bool ThreadsManagementSystem::Slave::terminate() {
-    std::lock_guard<std::mutex> lck {mBlockTask};
+    std::unique_lock<std::mutex> lck {mBlockTask};
     if(task != nullptr) {
         task->terminate();
+        waitFinishThread();
         return true;
     }
     return false;
@@ -37,6 +38,7 @@ bool ThreadsManagementSystem::Slave::isExecutingTask() {
 
 void ThreadsManagementSystem::Slave::run() {
     int state = task->run();
+    std::unique_lock<std::mutex> lck {mBlockTask};
     addStateTask(task->getStateTask());
     task = nullptr;
 }
@@ -45,10 +47,30 @@ void ThreadsManagementSystem::Slave::waitFinishThread() {
     if(taskWorker != nullptr)
     {
         taskWorker->join();
+        taskWorker = nullptr;
     }
-    taskWorker = nullptr;
 }
 
 ThreadsManagementSystem::Slave::~Slave() {
+    if(task != nullptr){
+        task->terminate();
+        task = nullptr;
+    }
     waitFinishThread();
+}
+
+TypeIdJob ThreadsManagementSystem::Slave::getIdJobExecuting() {
+    std::lock_guard<std::mutex> lck {mBlockTask};
+    if(task != nullptr) {
+        return task->getIdJob();
+    }
+    return empty_TypeIdJob;
+}
+
+TypeIdTask ThreadsManagementSystem::Slave::getIdTaskExecuting() {
+    std::lock_guard<std::mutex> lck {mBlockTask};
+    if(task != nullptr) {
+        return task->getIdTask();
+    }
+    return empty_TypeIdTask;
 }

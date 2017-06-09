@@ -45,6 +45,8 @@ MessageInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
 memory
 -
+Types.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.cpp
 ThreadInterface.h

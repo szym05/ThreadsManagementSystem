@@ -9,16 +9,26 @@
 namespace ThreadsManagementSystem {
     class StateTaskInterface{
     public:
+        StateTaskInterface(TypeIdJob idJob, TypeIdTask idTask, TypeStateTask state) : idJob(idJob), idTask(idTask),
+                                                                                      state(state) {}
+
         TypeStateTask getState() const {
             return state;
         }
 
-        void setState(TypeStateTask state) {
-            StateTaskInterface::state = state;
+        TypeIdJob getIdJob() const {
+            return idJob;
         }
 
+        TypeIdTask getIdTask() const {
+            return idTask;
+        }
+
+
     protected:
-        TypeStateTask state = TypeStateTask::empty;
+        TypeIdJob idJob {empty_TypeIdJob};
+        TypeIdTask idTask {empty_TypeIdTask};
+        TypeStateTask state {TypeStateTask::empty};
 
     };
 }

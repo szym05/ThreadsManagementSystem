@@ -21,14 +21,18 @@ namespace ThreadsManagementSystem {
 
         virtual ~Slave();
 
+        TypeIdJob getIdJobExecuting() override;
+
+        TypeIdTask getIdTaskExecuting() override;
+
     protected:
         void run() override;
         void waitFinishThread();
 
     protected:
         std::mutex mBlockTask;
-        std::unique_ptr<TaskInterface> task = nullptr;
-        std::unique_ptr<std::thread> taskWorker = nullptr;
+        std::unique_ptr<TaskInterface> task {nullptr};
+        std::unique_ptr<std::thread> taskWorker {nullptr};
         std::function< void (std::unique_ptr<StateTaskInterface>) > addStateTask;
 
     };

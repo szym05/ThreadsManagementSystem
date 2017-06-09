@@ -3,6 +3,10 @@
 #include "Slave.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::string pas = "1123";
+
+
+
+
     return 0;
 }

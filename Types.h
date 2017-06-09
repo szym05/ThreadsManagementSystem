@@ -5,7 +5,10 @@
 #include <memory>
 
 using TypeIdJob = unsigned long long;
+#define empty_TypeIdJob  0
 using TypeIdTask = unsigned long long;
+#define empty_TypeIdTask  0
+
 
 enum class TypeMessage : char{
     empty,

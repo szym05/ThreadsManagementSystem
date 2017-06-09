@@ -20,6 +20,10 @@ namespace ThreadsManagementSystem {
         virtual bool start(std::unique_ptr<TaskInterface> &&task) = 0;
 
         virtual bool isExecutingTask() = 0;
+
+        virtual TypeIdJob getIdJobExecuting() = 0;
+
+        virtual TypeIdTask getIdTaskExecuting() = 0;
     };
 }
 #endif //THREADSMANAGEMENTSYSTEM_SLAVEINTERFACE_H

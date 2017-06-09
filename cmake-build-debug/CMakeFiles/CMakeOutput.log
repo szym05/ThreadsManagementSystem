@@ -534,3 +534,31 @@ make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/ThreadsManagementSyste
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the Q_WS_X11 exist passed with the following output:
+Change Dir: /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43b41/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43b41.dir/build.make CMakeFiles/cmTC_43b41.dir/build
+make[1]: Wejście do katalogu '/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_43b41.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_43b41.dir/CheckSymbolExists.cxx.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_43b41
+/ide/clion-2017.1.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43b41.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_43b41.dir/CheckSymbolExists.cxx.o  -o cmTC_43b41 
+make[1]: Opuszczenie katalogu '/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+File /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
