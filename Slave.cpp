@@ -25,7 +25,7 @@ bool ThreadsManagementSystem::Slave::start(std::unique_ptr<ThreadsManagementSyst
     if(task != nullptr) {
         this->task = std::move(task);
         waitFinishThread();
-        taskWorker = std::make_unique<std::thread>(this->run);
+        taskWorker = std::make_unique<std::thread>(&Slave::run, this);
         return true;
     }
     return false;

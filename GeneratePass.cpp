@@ -1,6 +1,3 @@
-//
-// Created by szymon on 09.06.17.
-//
 
 #include "GeneratePass.h"
 
@@ -57,3 +54,11 @@ bool ThreadsManagementSystemPassBreak::GeneratePass::next() {
 
 ThreadsManagementSystemPassBreak::GeneratePass::GeneratePass(TypeNumberSteps numberSteps, size_t sizeAlphabet)
         : numberStepsMax(numberSteps), sizeAlphabet(sizeAlphabet) {}
+
+size_t ThreadsManagementSystemPassBreak::GeneratePass::getDigit(long long i) {
+    if(i > 0 && i < nextPass.size())
+    {
+        return nextPass[i];
+    }
+    return 0;
+}

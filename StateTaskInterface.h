@@ -12,9 +12,7 @@ namespace ThreadsManagementSystem {
         StateTaskInterface(TypeIdJob idJob, TypeIdTask idTask, TypeStateTask state) : idJob(idJob), idTask(idTask),
                                                                                       state(state) {}
 
-        TypeStateTask getState() const {
-            return state;
-        }
+        virtual TypeStateTask getState() const = 0;
 
         TypeIdJob getIdJob() const {
             return idJob;

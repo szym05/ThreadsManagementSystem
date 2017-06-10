@@ -13,7 +13,7 @@ namespace ThreadsManagementSystem {
 
     class TaskInterface{
     public:
-        TaskInterface(TypeIdJob idJob, TypeIdTask idTask) : idJob(idJob), idTask(idTask) {}
+         TaskInterface(TypeIdJob idJob, TypeIdTask idTask) : idJob(idJob), idTask(idTask) {}
 
 
         virtual std::unique_ptr<StateTaskInterface> getStateTask() = 0;
@@ -27,9 +27,7 @@ namespace ThreadsManagementSystem {
 
         virtual bool isRunning() = 0;
 
-        virtual TypeIdJob getIdJob(){
-            return idJob;
-        };
+        virtual TypeIdJob getIdJob()=0;
 
         virtual TypeIdTask getIdTask(){
             return idTask;

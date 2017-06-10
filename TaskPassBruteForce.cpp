@@ -7,7 +7,7 @@
 std::unique_ptr<ThreadsManagementSystem::StateTaskInterface>
 ThreadsManagementSystemPassBreak::TaskPassBruteForce::getStateTask() {
     std::lock_guard<std::mutex> lck{mBlock};
-    return new StateTaskPass(idJob, idTask, TypeStateTask::state, solution, numberStepsExecuted);
+    return std::make_unique<StateTaskPass>(idJob, idTask, TypeStateTask::state, solution, numberStepsExecuted);
 }
 
 void ThreadsManagementSystemPassBreak::TaskPassBruteForce::terminate() {
@@ -39,17 +39,17 @@ void ThreadsManagementSystemPassBreak::TaskPassBruteForce::passBreakMd5() {
     std::unique_lock<std::mutex> lck{mBlock};
     lck.unlock();
 
-    TypeHash hash_TMP;
+    Hash hash_TMP;
     TypeSolution solutionTmp;
 
    while(tRunning && nextPass->next())
    {
        solutionTmp = empty_TypeSolution;
        for(size_t i = 0; i < nextPass->size(); ++i){
-           solutionTmp += alphabet[nextPass[i]];
+           solutionTmp.push_back((*alphabet)[(*nextPass)[i]]);
        }
 
-       hash_TMP = getHashMethodMD5(solutionTmp);
+       hash_TMP = GenerateHashPass::getHashMethodMD5(solutionTmp);
        lck.lock();
        ++numberStepsExecuted;
        lck.unlock();
@@ -64,15 +64,22 @@ void ThreadsManagementSystemPassBreak::TaskPassBruteForce::passBreakMd5() {
 }
 
 
+ThreadsManagementSystemPassBreak::TaskPassBruteForce::TaskPassBruteForce(
+        TypeIdJob idJob,
+        TypeIdTask idTask,
+        TypeHash typeHash,
+        TypeMethod method,
+        const Hash &hash,
+        std::unique_ptr<const ThreadsManagementSystemPassBreak::Alphabet> &&alphabet,
+        std::unique_ptr<GeneratePass> &&nextPass)
 
-
-
-
-ThreadsManagementSystemPassBreak::TaskPassBruteForce::TaskPassBruteForce(TypeIdJob idJob, TypeIdTask idTask,
-                                                                         TypeHash typeHash, TypeMethod method,
-                                                                         const Hash &hash,
-                                                                         std::unique_ptr<const ThreadsManagementSystemPassBreak::Alphabet> &&alphabet)
-        : TaskPass(idJob, idTask, typeHash, method, hash, std::move(alphabet)) {
+        : TaskPass(idJob, idTask, typeHash, method, hash, std::move(alphabet)),
+nextPass(std::move(nextPass)){
 
 }
 
+
+
+TypeNumberSteps ThreadsManagementSystemPassBreak::TaskPassBruteForce::getNumberStepsExecuted(){
+    return numberStepsExecuted;
+}

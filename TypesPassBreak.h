@@ -14,6 +14,7 @@ using TypeSolution = std::string;
 using TypeSignAlphabet = char;
 #define empty_TypeSignAlphabet '\0'
 
+using TypeLengthPassw = unsigned int;
 
 using TypeNumberSteps = unsigned long long;
 

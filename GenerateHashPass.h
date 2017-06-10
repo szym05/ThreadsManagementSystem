@@ -6,12 +6,13 @@
 #define THREADSMANAGEMENTSYSTEM_GENERATEHASHPASS_H
 
 #include "TypesPassBreak.h"
+#include <QCryptographicHash>
 
 namespace ThreadsManagementSystemPassBreak{
     class GenerateHashPass{
     public:
-        static TypeHash getHashMethodMD5(TypeSolution pass){
-
+        static Hash getHashMethodMD5(TypeSolution pass){
+            return QCryptographicHash::hash(pass.c_str(), QCryptographicHash::Md5).toHex().toStdString();
         }
     };
 }

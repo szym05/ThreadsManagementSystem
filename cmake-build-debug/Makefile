@@ -123,6 +123,168 @@ ThreadsManagementSystem/fast:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/build
 .PHONY : ThreadsManagementSystem/fast
 
+Alphabet.o: Alphabet.cpp.o
+
+.PHONY : Alphabet.o
+
+# target to build an object file
+Alphabet.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o
+.PHONY : Alphabet.cpp.o
+
+Alphabet.i: Alphabet.cpp.i
+
+.PHONY : Alphabet.i
+
+# target to preprocess a source file
+Alphabet.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.i
+.PHONY : Alphabet.cpp.i
+
+Alphabet.s: Alphabet.cpp.s
+
+.PHONY : Alphabet.s
+
+# target to generate assembly for a file
+Alphabet.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.s
+.PHONY : Alphabet.cpp.s
+
+ConnectionApiPass.o: ConnectionApiPass.cpp.o
+
+.PHONY : ConnectionApiPass.o
+
+# target to build an object file
+ConnectionApiPass.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o
+.PHONY : ConnectionApiPass.cpp.o
+
+ConnectionApiPass.i: ConnectionApiPass.cpp.i
+
+.PHONY : ConnectionApiPass.i
+
+# target to preprocess a source file
+ConnectionApiPass.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.i
+.PHONY : ConnectionApiPass.cpp.i
+
+ConnectionApiPass.s: ConnectionApiPass.cpp.s
+
+.PHONY : ConnectionApiPass.s
+
+# target to generate assembly for a file
+ConnectionApiPass.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.s
+.PHONY : ConnectionApiPass.cpp.s
+
+GeneratePass.o: GeneratePass.cpp.o
+
+.PHONY : GeneratePass.o
+
+# target to build an object file
+GeneratePass.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o
+.PHONY : GeneratePass.cpp.o
+
+GeneratePass.i: GeneratePass.cpp.i
+
+.PHONY : GeneratePass.i
+
+# target to preprocess a source file
+GeneratePass.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.i
+.PHONY : GeneratePass.cpp.i
+
+GeneratePass.s: GeneratePass.cpp.s
+
+.PHONY : GeneratePass.s
+
+# target to generate assembly for a file
+GeneratePass.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.s
+.PHONY : GeneratePass.cpp.s
+
+JobFactoryPass.o: JobFactoryPass.cpp.o
+
+.PHONY : JobFactoryPass.o
+
+# target to build an object file
+JobFactoryPass.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o
+.PHONY : JobFactoryPass.cpp.o
+
+JobFactoryPass.i: JobFactoryPass.cpp.i
+
+.PHONY : JobFactoryPass.i
+
+# target to preprocess a source file
+JobFactoryPass.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.i
+.PHONY : JobFactoryPass.cpp.i
+
+JobFactoryPass.s: JobFactoryPass.cpp.s
+
+.PHONY : JobFactoryPass.s
+
+# target to generate assembly for a file
+JobFactoryPass.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.s
+.PHONY : JobFactoryPass.cpp.s
+
+JobManagementPass.o: JobManagementPass.cpp.o
+
+.PHONY : JobManagementPass.o
+
+# target to build an object file
+JobManagementPass.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o
+.PHONY : JobManagementPass.cpp.o
+
+JobManagementPass.i: JobManagementPass.cpp.i
+
+.PHONY : JobManagementPass.i
+
+# target to preprocess a source file
+JobManagementPass.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.i
+.PHONY : JobManagementPass.cpp.i
+
+JobManagementPass.s: JobManagementPass.cpp.s
+
+.PHONY : JobManagementPass.s
+
+# target to generate assembly for a file
+JobManagementPass.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.s
+.PHONY : JobManagementPass.cpp.s
+
+JobManagemetPassBruteForce.o: JobManagemetPassBruteForce.cpp.o
+
+.PHONY : JobManagemetPassBruteForce.o
+
+# target to build an object file
+JobManagemetPassBruteForce.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o
+.PHONY : JobManagemetPassBruteForce.cpp.o
+
+JobManagemetPassBruteForce.i: JobManagemetPassBruteForce.cpp.i
+
+.PHONY : JobManagemetPassBruteForce.i
+
+# target to preprocess a source file
+JobManagemetPassBruteForce.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.i
+.PHONY : JobManagemetPassBruteForce.cpp.i
+
+JobManagemetPassBruteForce.s: JobManagemetPassBruteForce.cpp.s
+
+.PHONY : JobManagemetPassBruteForce.s
+
+# target to generate assembly for a file
+JobManagemetPassBruteForce.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.s
+.PHONY : JobManagemetPassBruteForce.cpp.s
+
 Slave.o: Slave.cpp.o
 
 .PHONY : Slave.o
@@ -176,6 +338,33 @@ SlaveManagement.s: SlaveManagement.cpp.s
 SlaveManagement.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.s
 .PHONY : SlaveManagement.cpp.s
+
+TaskPassBruteForce.o: TaskPassBruteForce.cpp.o
+
+.PHONY : TaskPassBruteForce.o
+
+# target to build an object file
+TaskPassBruteForce.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o
+.PHONY : TaskPassBruteForce.cpp.o
+
+TaskPassBruteForce.i: TaskPassBruteForce.cpp.i
+
+.PHONY : TaskPassBruteForce.i
+
+# target to preprocess a source file
+TaskPassBruteForce.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.i
+.PHONY : TaskPassBruteForce.cpp.i
+
+TaskPassBruteForce.s: TaskPassBruteForce.cpp.s
+
+.PHONY : TaskPassBruteForce.s
+
+# target to generate assembly for a file
+TaskPassBruteForce.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.s
+.PHONY : TaskPassBruteForce.cpp.s
 
 ThreadInterface.o: ThreadInterface.cpp.o
 
@@ -240,12 +429,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ThreadsManagementSystem"
+	@echo "... Alphabet.o"
+	@echo "... Alphabet.i"
+	@echo "... Alphabet.s"
+	@echo "... ConnectionApiPass.o"
+	@echo "... ConnectionApiPass.i"
+	@echo "... ConnectionApiPass.s"
+	@echo "... GeneratePass.o"
+	@echo "... GeneratePass.i"
+	@echo "... GeneratePass.s"
+	@echo "... JobFactoryPass.o"
+	@echo "... JobFactoryPass.i"
+	@echo "... JobFactoryPass.s"
+	@echo "... JobManagementPass.o"
+	@echo "... JobManagementPass.i"
+	@echo "... JobManagementPass.s"
+	@echo "... JobManagemetPassBruteForce.o"
+	@echo "... JobManagemetPassBruteForce.i"
+	@echo "... JobManagemetPassBruteForce.s"
 	@echo "... Slave.o"
 	@echo "... Slave.i"
 	@echo "... Slave.s"
 	@echo "... SlaveManagement.o"
 	@echo "... SlaveManagement.i"
 	@echo "... SlaveManagement.s"
+	@echo "... TaskPassBruteForce.o"
+	@echo "... TaskPassBruteForce.i"
+	@echo "... TaskPassBruteForce.s"
 	@echo "... ThreadInterface.o"
 	@echo "... ThreadInterface.i"
 	@echo "... ThreadInterface.s"

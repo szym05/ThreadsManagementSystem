@@ -2,6 +2,10 @@
 
 #include "Slave.h"
 
+#include <QtCore>
+
+#include "TaskPassBruteForce.h"
+
 int main() {
     std::string pas = "1123";
 

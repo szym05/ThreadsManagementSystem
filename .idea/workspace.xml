@@ -12,31 +12,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a46ee29b-cf76-49aa-9023-ab2e1ea57302" name="Default" comment="The Slave implementation has added to the system.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Alphabet.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Alphabet.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenerateHashPass.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneratePass.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneratePass.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StateTaskPass.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TaskPass.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TaskPassBruteForce.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TaskPassBruteForce.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TypesPassBreak.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ConnectionApiInterface.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ConnectionApiPass.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ConnectionApiPass.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobFactoryPass.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobFactoryPass.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobManagementPass.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobManagementPass.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobManagemetPassBruteForce.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobManagemetPassBruteForce.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JobPass.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StateJobPass.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/JobManagmentInterface.h" afterPath="$PROJECT_DIR$/JobManagementInterface.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Alphabet.cpp" afterPath="$PROJECT_DIR$/Alphabet.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Alphabet.h" afterPath="$PROJECT_DIR$/Alphabet.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GenerateHashPass.h" afterPath="$PROJECT_DIR$/GenerateHashPass.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneratePass.cpp" afterPath="$PROJECT_DIR$/GeneratePass.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneratePass.h" afterPath="$PROJECT_DIR$/GeneratePass.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JobFactoryInterface.h" afterPath="$PROJECT_DIR$/JobFactoryInterface.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JobInterface.h" afterPath="$PROJECT_DIR$/JobInterface.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MessageInterface.h" afterPath="$PROJECT_DIR$/MessageInterface.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Slave.cpp" afterPath="$PROJECT_DIR$/Slave.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Slave.h" afterPath="$PROJECT_DIR$/Slave.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlaveInterface.h" afterPath="$PROJECT_DIR$/SlaveInterface.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlaveManagement.cpp" afterPath="$PROJECT_DIR$/SlaveManagement.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlaveManagement.h" afterPath="$PROJECT_DIR$/SlaveManagement.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StateJobInterface.h" afterPath="$PROJECT_DIR$/StateJobInterface.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StateTaskInterface.h" afterPath="$PROJECT_DIR$/StateTaskInterface.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StateTaskPass.h" afterPath="$PROJECT_DIR$/StateTaskPass.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TaskInterface.h" afterPath="$PROJECT_DIR$/TaskInterface.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TaskPass.h" afterPath="$PROJECT_DIR$/TaskPass.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TaskPassBruteForce.cpp" afterPath="$PROJECT_DIR$/TaskPassBruteForce.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TaskPassBruteForce.h" afterPath="$PROJECT_DIR$/TaskPassBruteForce.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Types.h" afterPath="$PROJECT_DIR$/Types.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypesPassBreak.h" afterPath="$PROJECT_DIR$/TypesPassBreak.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -49,34 +71,70 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55451715">
+    <splitter split-orientation="horizontal" split-proportion="0.5037831">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GenerateHashPass.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GenerateHashPass.h">
+          <file leaf-file-name="StateTaskPass.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/StateTaskPass.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="40" />
+                <state relative-caret-position="306">
+                  <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#138#169#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JobManagementPass.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/JobManagementPass.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="393">
+                  <caret line="107" column="41" lean-forward="false" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#41#60#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JobManagemetPassBruteForce.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/JobManagemetPassBruteForce.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1462">
+                  <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#1#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Alphabet.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Alphabet.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TypesPassBreak.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/TypesPassBreak.h">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+                <state relative-caret-position="221">
+                  <caret line="5" column="740" lean-forward="false" selection-start-line="5" selection-start-column="740" selection-end-line="5" selection-end-column="740" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TaskPass.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/TaskPass.h">
+          <file leaf-file-name="Alphabet.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Alphabet.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="408">
-                  <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+                  <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -85,38 +143,8 @@
           <file leaf-file-name="TaskPassBruteForce.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Slave.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Slave.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SlaveInterface.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SlaveInterface.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                <state relative-caret-position="351">
+                  <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -125,28 +153,30 @@
           <file leaf-file-name="GeneratePass.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/GeneratePass.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+                <state relative-caret-position="1088">
+                  <caret line="62" column="13" lean-forward="false" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GeneratePass.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GeneratePass.h">
+          <file leaf-file-name="TaskPass.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TaskPass.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
-                  <folding />
+                <state relative-caret-position="454">
+                  <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="48" />
+                  <folding>
+                    <element signature="e#80#96#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Slave.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Slave.cpp">
+          <file leaf-file-name="TaskInterface.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TaskInterface.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="715">
-                  <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+                <state relative-caret-position="102">
+                  <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -156,25 +186,35 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="TaskPassBruteForce.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.h">
+          <file leaf-file-name="TypesPassBreak.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TypesPassBreak.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+                <state relative-caret-position="220">
+                  <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JobManagemetPassBruteForce.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/JobManagemetPassBruteForce.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="169">
+                  <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
                   <folding>
-                    <element signature="e#148#169#0" expanded="true" />
+                    <element signature="e#164#194#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="StateTaskPass.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/StateTaskPass.h">
+          <file leaf-file-name="ConnectionApiPass.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ConnectionApiPass.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+                <state relative-caret-position="306">
+                  <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="62" />
                   <folding>
-                    <element signature="e#138#169#0" expanded="true" />
+                    <element signature="e#147#182#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -183,9 +223,65 @@
           <file leaf-file-name="Types.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Types.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JobFactoryPass.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/JobFactoryPass.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="29" selection-end-column="86" />
+                  <folding>
+                    <element signature="e#140#172#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JobManagementPass.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/JobManagementPass.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="22" column="92" lean-forward="false" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
+                  <folding>
+                    <element signature="e#146#181#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TaskPassBruteForce.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SlaveInterface.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SlaveInterface.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GeneratePass.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/GeneratePass.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="220">
+                  <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#96#113#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -204,6 +300,18 @@
       <find>checkP</find>
       <find>checkPa</find>
       <find>checkPas</find>
+      <find>T</find>
+      <find>Tas</find>
+      <find>Task</find>
+      <find>TaskI</find>
+      <find>TaskIn</find>
+      <find>TaskInt</find>
+      <find>TaskInte</find>
+      <find>TaskInter</find>
+      <find>TaskInterf</find>
+      <find>TaskInterfa</find>
+      <find>TaskInterfac</find>
+      <find>TaskInterface</find>
     </findStrings>
     <replaceStrings>
       <replace>tRunning</replace>
@@ -218,49 +326,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadInterface.h" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadInterface.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/SynchronizedQueue.h" />
-        <option value="$PROJECT_DIR$/Solution.h" />
         <option value="$PROJECT_DIR$/StateTask.h" />
         <option value="$PROJECT_DIR$/SlaveManagementInterface.h.h" />
         <option value="$PROJECT_DIR$/ThreadInterface.h" />
         <option value="$PROJECT_DIR$/ThreadInterface.cpp" />
-        <option value="$PROJECT_DIR$/StateJobInterface.h" />
         <option value="$PROJECT_DIR$/SlaveManagementInterface.h" />
-        <option value="$PROJECT_DIR$/MessageInterface.h" />
         <option value="$PROJECT_DIR$/MasterInterface.h" />
         <option value="$PROJECT_DIR$/JobManagmentInterface.h" />
-        <option value="$PROJECT_DIR$/JobFactoryInterface.h" />
-        <option value="$PROJECT_DIR$/JobInterface.h" />
         <option value="$PROJECT_DIR$/SynchronizedQueue.h" />
         <option value="$PROJECT_DIR$/Perm.sh" />
         <option value="$PROJECT_DIR$/SlaveManagement.h" />
         <option value="$PROJECT_DIR$/SlaveManagement.cpp" />
         <option value="$PROJECT_DIR$/SlaveInterface.h" />
         <option value="$PROJECT_DIR$/Task.cpp" />
-        <option value="$PROJECT_DIR$/Types.h" />
         <option value="$PROJECT_DIR$/Task.h" />
         <option value="$PROJECT_DIR$/TaskPass.cpp" />
         <option value="$PROJECT_DIR$/Slave.h" />
-        <option value="$PROJECT_DIR$/TaskInterface.h" />
-        <option value="$PROJECT_DIR$/Alphabet.cpp" />
-        <option value="$PROJECT_DIR$/Alphabet.h" />
-        <option value="$PROJECT_DIR$/GeneratePass.h" />
-        <option value="$PROJECT_DIR$/GeneratePass.cpp" />
-        <option value="$PROJECT_DIR$/StateTaskInterface.h" />
-        <option value="$PROJECT_DIR$/TypesPassBreak.h" />
-        <option value="$PROJECT_DIR$/StateTaskPass.h" />
-        <option value="$PROJECT_DIR$/Slave.cpp" />
-        <option value="$PROJECT_DIR$/TaskPass.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/Makefile" />
         <option value="$PROJECT_DIR$/GenerateHashMethods.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/GenerateHashPass.h" />
-        <option value="$PROJECT_DIR$/TaskPassBruteForce.h" />
-        <option value="$PROJECT_DIR$/TaskPassBruteForce.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Slave.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/TypesPassBreak.h" />
+        <option value="$PROJECT_DIR$/JobInterface.h" />
+        <option value="$PROJECT_DIR$/JobPass.h" />
+        <option value="$PROJECT_DIR$/GenerateHashPass.h" />
+        <option value="$PROJECT_DIR$/JobFactoryInterface.h" />
+        <option value="$PROJECT_DIR$/JobFactoryPass.cpp" />
+        <option value="$PROJECT_DIR$/JobFactoryPass.h" />
+        <option value="$PROJECT_DIR$/ConnectionApiInterface.h" />
+        <option value="$PROJECT_DIR$/ConnectionApiPass.h" />
+        <option value="$PROJECT_DIR$/ConnectionApiPass.cpp" />
+        <option value="$PROJECT_DIR$/StateTaskInterface.h" />
+        <option value="$PROJECT_DIR$/StateTaskPass.h" />
+        <option value="$PROJECT_DIR$/Types.h" />
+        <option value="$PROJECT_DIR$/StateJobInterface.h" />
+        <option value="$PROJECT_DIR$/MessageInterface.h" />
+        <option value="$PROJECT_DIR$/StateJobPass.h" />
+        <option value="$PROJECT_DIR$/JobManagementInterface.h" />
+        <option value="$PROJECT_DIR$/TaskInterface.h" />
+        <option value="$PROJECT_DIR$/TaskPass.h" />
+        <option value="$PROJECT_DIR$/JobManagementPass.h" />
+        <option value="$PROJECT_DIR$/JobManagementPass.cpp" />
+        <option value="$PROJECT_DIR$/JobManagemetPassBruteForce.h" />
+        <option value="$PROJECT_DIR$/JobManagemetPassBruteForce.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/TaskPassBruteForce.h" />
+        <option value="$PROJECT_DIR$/GeneratePass.h" />
+        <option value="$PROJECT_DIR$/GeneratePass.cpp" />
+        <option value="$PROJECT_DIR$/Alphabet.h" />
+        <option value="$PROJECT_DIR$/Alphabet.cpp" />
+        <option value="$PROJECT_DIR$/TaskPassBruteForce.cpp" />
       </list>
     </option>
   </component>
@@ -579,6 +695,11 @@
       <workItem from="1497024542249" duration="139000" />
       <workItem from="1497025075350" duration="580000" />
       <workItem from="1497025667851" duration="1231000" />
+      <workItem from="1497033089785" duration="27000" />
+      <workItem from="1497033154737" duration="5327000" />
+      <workItem from="1497086993916" duration="4849000" />
+      <workItem from="1497095232593" duration="14257000" />
+      <workItem from="1497113880109" duration="6603000" />
     </task>
     <task id="LOCAL-00001" summary="The interfaces has added to the system, Which allows him development in the future.">
       <created>1496694826841</created>
@@ -598,7 +719,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55319000" />
+    <option name="totallyTimeSpent" value="86382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,24 +734,24 @@
     <frame x="0" y="0" width="1920" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15955175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14537445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3160793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20154186" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15528281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -658,6 +779,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -673,144 +820,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThreadsManagementSystem.cbp" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobInterface.h" />
-    <entry file="file://$PROJECT_DIR$/#SynchronizedQueue.h#" />
-    <entry file="file:///usr/include/c++/6.3.1/bits/stl_construct.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="74" column="41" lean-forward="false" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JobFactoryInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JobInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JobManagmentInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StateJobInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SynchronizedQueue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SlaveManagementInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MessageInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Perm.sh" />
-    <entry file="file://$PROJECT_DIR$/ThreadInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SlaveManagement.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThreadInterface.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskPass.cpp" />
-    <entry file="file://$PROJECT_DIR$/SlaveManagement.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alphabet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alphabet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StateTaskInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="39" selection-end-column="45" />
-          <folding>
-            <element signature="e#98#126#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qt_libs/lib/cmake/Qt5/Qt5Config.cmake" />
     <entry file="file://$PROJECT_DIR$/qt_libs/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake" />
     <entry file="file://$PROJECT_DIR$/qt_libs/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake" />
     <entry file="file://$PROJECT_DIR$/qt_libs/lib/cmake/Qt5Core/Qt5CTestMacros.cmake" />
@@ -839,136 +848,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qt_libs/lib/cmake/Qt5Core/Qt5CoreMacros.cmake" />
     <entry file="file://$PROJECT_DIR$/qt_libs/include/QtCore/QCryptographicHash" />
-    <entry file="file://$PROJECT_DIR$/GenerateHashMethods.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-release/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="346" lean-forward="false" selection-start-line="5" selection-start-column="346" selection-end-line="5" selection-end-column="346" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Types.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypesPassBreak.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskPass.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StateTaskPass.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding>
-            <element signature="e#138#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GenerateHashPass.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#148#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneratePass.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneratePass.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Slave.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GenerateHashMethods.h" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/Makefile" />
     <entry file="file://$PROJECT_DIR$/Slave.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="578">
           <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SlaveInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -978,6 +863,330 @@
         <state relative-caret-position="527">
           <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Slave.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThreadInterface.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThreadInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobFactoryPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="29" selection-end-column="86" />
+          <folding>
+            <element signature="e#140#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobFactoryPass.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="e#41#68#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobFactoryInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectionApiInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="e#116#141#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectionApiPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="e#147#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectionApiPass.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding>
+            <element signature="e#41#71#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#96#113#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenerateHashPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#144#171#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StateTaskInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StateJobInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MessageInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/6.3.1/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="790" column="0" lean-forward="false" selection-start-line="790" selection-start-column="0" selection-end-line="790" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StateJobPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="85" column="51" lean-forward="false" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+          <folding>
+            <element signature="e#136#154#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobManagementInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StateTaskPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#138#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SlaveInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TaskInterface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobManagementPass.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="107" column="41" lean-forward="false" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobManagementPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="22" column="92" lean-forward="false" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
+          <folding>
+            <element signature="e#146#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypesPassBreak.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TaskPass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="e#80#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="5" column="740" lean-forward="false" selection-start-line="5" selection-start-column="740" selection-end-line="5" selection-end-column="740" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alphabet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alphabet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneratePass.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="62" column="13" lean-forward="false" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TaskPassBruteForce.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobManagemetPassBruteForce.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneratePass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#96#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JobManagemetPassBruteForce.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#164#194#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -105,19 +105,256 @@ CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o.provides: CMakeFile
 CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o
 
 
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.cpp > CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.cpp -o CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../Slave.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp > CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp -o CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o: ../JobManagementPass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.cpp > CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.cpp -o CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobFactoryPass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryPass.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryPass.cpp > CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryPass.cpp -o CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o: ../ConnectionApiPass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiPass.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiPass.cpp > CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiPass.cpp -o CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o: ../JobManagemetPassBruteForce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.cpp > CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.cpp -o CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o: ../Alphabet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.cpp > CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.cpp -o CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o: ../GeneratePass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.cpp > CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.cpp -o CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o: ../TaskPassBruteForce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.cpp > CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.cpp -o CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o
+
+
 # Object files for target ThreadsManagementSystem
 ThreadsManagementSystem_OBJECTS = \
 "CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o" \
-"CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o"
+"CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o"
 
 # External object files for target ThreadsManagementSystem
 ThreadsManagementSystem_EXTERNAL_OBJECTS =
 
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/build.make
+ThreadsManagementSystem: /usr/lib/libQt5Widgets.so.5.8.0
+ThreadsManagementSystem: /usr/lib/libQt5Gui.so.5.8.0
+ThreadsManagementSystem: /usr/lib/libQt5Core.so.5.8.0
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ThreadsManagementSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ThreadsManagementSystem"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThreadsManagementSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +364,15 @@ CMakeFiles/ThreadsManagementSystem.dir/build: ThreadsManagementSystem
 
 CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o.requires
 CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/ConnectionApiPass.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o.requires
 
 .PHONY : CMakeFiles/ThreadsManagementSystem.dir/requires
 

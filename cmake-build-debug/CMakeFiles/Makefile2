@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-buil
 CMakeFiles/ThreadsManagementSystem.dir/all:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/depend
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target ThreadsManagementSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ThreadsManagementSystem"
 .PHONY : CMakeFiles/ThreadsManagementSystem.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/ThreadsManagementSystem.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ThreadsManagementSystem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ThreadsManagementSystem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ThreadsManagementSystem.dir/rule

@@ -10,12 +10,16 @@
 namespace ThreadsManagementSystemPassBreak {
     class TaskPass : public ThreadsManagementSystem::TaskInterface {
     public:
-        TaskPass(TypeIdJob idJob, TypeIdTask idTask, TypeHash typeHash, TypeMethod method, const Hash &hash,
+          TaskPass(TypeIdJob idJob, TypeIdTask idTask, TypeHash typeHash, TypeMethod method, const Hash &hash,
                   std::unique_ptr<const Alphabet> &&alphabet)
                 : TaskInterface(idJob, idTask), typeHash(typeHash),
                                                                     method(method), hash(hash), alphabet(std::move(alphabet)) {}
 
+        virtual TypeIdJob getIdJob(){
+            return idJob;
+        }
 
+        virtual TypeNumberSteps getNumberStepsExecuted() = 0;
 
     protected:
         TypeHash typeHash {TypeHash::empty};

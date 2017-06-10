@@ -1,12 +1,8 @@
-//
-// Created by szymon on 09.06.17.
-//
 
 #ifndef THREADSMANAGEMENTSYSTEM_GENERATEPASS_H
 #define THREADSMANAGEMENTSYSTEM_GENERATEPASS_H
 
-#include <bits/unique_ptr.h>
-#include <bits/shared_ptr.h>
+#include <memory>
 #include <vector>
 #include "Alphabet.h"
 namespace ThreadsManagementSystemPassBreak {
@@ -20,6 +16,8 @@ namespace ThreadsManagementSystemPassBreak {
         size_t size();
 
         size_t operator[](long long i);
+
+        size_t getDigit(long long i);
 
         GeneratePass& operator++();
 

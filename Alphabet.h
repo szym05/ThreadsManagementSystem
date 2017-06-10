@@ -13,9 +13,11 @@ namespace ThreadsManagementSystemPassBreak {
     public:
         Alphabet(const TypeAlphabet &alphabet);
 
-        size_t size();
+        size_t size() const;
 
-        TypeSignAlphabet operator[](long long i);
+        TypeSignAlphabet operator[](long long i) const;
+
+        TypeSignAlphabet getSign(long long i) const ;
 
     private:
         TypeAlphabet alphabet {empty_TypeAlphabet};
