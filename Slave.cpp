@@ -40,6 +40,7 @@ void ThreadsManagementSystem::Slave::run() {
     int state = task->run();
     std::unique_lock<std::mutex> lck {mBlockTask};
     addStateTask(task->getStateTask());
+    addSlaveToAvailable(id, task->getIdJob(), task->getIdTask());
     task = nullptr;
 }
 
@@ -74,3 +75,8 @@ TypeIdTask ThreadsManagementSystem::Slave::getIdTaskExecuting() {
     }
     return empty_TypeIdTask;
 }
+
+ThreadsManagementSystem::Slave::Slave(TypeIdSlave id) : SlaveInterface(id) {}
+
+ThreadsManagementSystem::Slave::Slave() {}
+

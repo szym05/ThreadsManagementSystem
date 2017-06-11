@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/ThreadsManagementSystem.dir/Alphabet.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o"
   "ThreadsManagementSystem.pdb"
   "ThreadsManagementSystem"
 )

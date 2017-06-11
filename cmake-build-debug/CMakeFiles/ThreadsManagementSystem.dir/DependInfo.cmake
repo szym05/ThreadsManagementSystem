@@ -10,10 +10,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryPass.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o"
+  "/home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o"
+  "/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o"
+  "/home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/main.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

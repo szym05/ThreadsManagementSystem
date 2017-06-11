@@ -285,6 +285,33 @@ JobManagemetPassBruteForce.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.s
 .PHONY : JobManagemetPassBruteForce.cpp.s
 
+JobRelatedSlaves.o: JobRelatedSlaves.cpp.o
+
+.PHONY : JobRelatedSlaves.o
+
+# target to build an object file
+JobRelatedSlaves.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o
+.PHONY : JobRelatedSlaves.cpp.o
+
+JobRelatedSlaves.i: JobRelatedSlaves.cpp.i
+
+.PHONY : JobRelatedSlaves.i
+
+# target to preprocess a source file
+JobRelatedSlaves.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.i
+.PHONY : JobRelatedSlaves.cpp.i
+
+JobRelatedSlaves.s: JobRelatedSlaves.cpp.s
+
+.PHONY : JobRelatedSlaves.s
+
+# target to generate assembly for a file
+JobRelatedSlaves.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.s
+.PHONY : JobRelatedSlaves.cpp.s
+
 Slave.o: Slave.cpp.o
 
 .PHONY : Slave.o
@@ -338,6 +365,33 @@ SlaveManagement.s: SlaveManagement.cpp.s
 SlaveManagement.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.s
 .PHONY : SlaveManagement.cpp.s
+
+SlaveRelatedTasks.o: SlaveRelatedTasks.cpp.o
+
+.PHONY : SlaveRelatedTasks.o
+
+# target to build an object file
+SlaveRelatedTasks.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o
+.PHONY : SlaveRelatedTasks.cpp.o
+
+SlaveRelatedTasks.i: SlaveRelatedTasks.cpp.i
+
+.PHONY : SlaveRelatedTasks.i
+
+# target to preprocess a source file
+SlaveRelatedTasks.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.i
+.PHONY : SlaveRelatedTasks.cpp.i
+
+SlaveRelatedTasks.s: SlaveRelatedTasks.cpp.s
+
+.PHONY : SlaveRelatedTasks.s
+
+# target to generate assembly for a file
+SlaveRelatedTasks.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.s
+.PHONY : SlaveRelatedTasks.cpp.s
 
 TaskPassBruteForce.o: TaskPassBruteForce.cpp.o
 
@@ -393,6 +447,33 @@ ThreadInterface.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.s
 .PHONY : ThreadInterface.cpp.s
 
+VectorSlaves.o: VectorSlaves.cpp.o
+
+.PHONY : VectorSlaves.o
+
+# target to build an object file
+VectorSlaves.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o
+.PHONY : VectorSlaves.cpp.o
+
+VectorSlaves.i: VectorSlaves.cpp.i
+
+.PHONY : VectorSlaves.i
+
+# target to preprocess a source file
+VectorSlaves.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.i
+.PHONY : VectorSlaves.cpp.i
+
+VectorSlaves.s: VectorSlaves.cpp.s
+
+.PHONY : VectorSlaves.s
+
+# target to generate assembly for a file
+VectorSlaves.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.s
+.PHONY : VectorSlaves.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -447,18 +528,27 @@ help:
 	@echo "... JobManagemetPassBruteForce.o"
 	@echo "... JobManagemetPassBruteForce.i"
 	@echo "... JobManagemetPassBruteForce.s"
+	@echo "... JobRelatedSlaves.o"
+	@echo "... JobRelatedSlaves.i"
+	@echo "... JobRelatedSlaves.s"
 	@echo "... Slave.o"
 	@echo "... Slave.i"
 	@echo "... Slave.s"
 	@echo "... SlaveManagement.o"
 	@echo "... SlaveManagement.i"
 	@echo "... SlaveManagement.s"
+	@echo "... SlaveRelatedTasks.o"
+	@echo "... SlaveRelatedTasks.i"
+	@echo "... SlaveRelatedTasks.s"
 	@echo "... TaskPassBruteForce.o"
 	@echo "... TaskPassBruteForce.i"
 	@echo "... TaskPassBruteForce.s"
 	@echo "... ThreadInterface.o"
 	@echo "... ThreadInterface.i"
 	@echo "... ThreadInterface.s"
+	@echo "... VectorSlaves.o"
+	@echo "... VectorSlaves.i"
+	@echo "... VectorSlaves.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

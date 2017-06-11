@@ -11,6 +11,11 @@ using TypeIdTask = unsigned long long;
 #define all_TypeIdTask  1
 #define first_TypeIdTask 2
 using TypePriority = unsigned int;
+using TypeIdSlave = unsigned int;
+#define empty_TypeSlave 0
+#define all_TypeSlave 1
+#define first_TypeSlave 2
+using TypeNumberSlave = unsigned int;
 
 
 enum class TypeMessage : char{

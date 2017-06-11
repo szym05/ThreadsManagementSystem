@@ -114,6 +114,11 @@ CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o
  /usr/include/qt/QtCore/qtypeinfo.h
  /usr/include/qt/QtCore/qtypetraits.h
  /usr/include/qt/QtCore/qversiontagging.h
+CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.cpp
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp
@@ -124,8 +129,25 @@ CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.cpp
  /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SynchronizedQueue.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.cpp
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/GenerateHashPass.h
@@ -176,6 +198,16 @@ CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o
 CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.cpp
  /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o
+ /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.cpp
+ /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/GenerateHashPass.h

@@ -11,6 +11,11 @@
 namespace ThreadsManagementSystem {
     class Slave : public SlaveInterface{
     public:
+        Slave(TypeIdSlave id);
+
+        Slave();
+
+
         std::unique_ptr<StateTaskInterface> getStateTask() override;
 
         bool terminate() override;
@@ -33,7 +38,6 @@ namespace ThreadsManagementSystem {
         std::mutex mBlockTask;
         std::unique_ptr<TaskInterface> task {nullptr};
         std::unique_ptr<std::thread> taskWorker {nullptr};
-        std::function< void (std::unique_ptr<StateTaskInterface>) > addStateTask;
 
     };
 

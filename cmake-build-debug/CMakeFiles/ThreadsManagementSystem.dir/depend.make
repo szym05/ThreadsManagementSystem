@@ -114,6 +114,11 @@ CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o: /usr/in
 CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o: /usr/include/qt/QtCore/qtypetraits.h
 CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o: /usr/include/qt/QtCore/qversiontagging.h
 
+CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o: ../JobRelatedSlaves.cpp
+CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o: ../JobRelatedSlaves.h
+CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o: ../SlaveRelatedTasks.h
+CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o: ../Types.h
+
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../Slave.cpp
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../Slave.h
@@ -123,8 +128,25 @@ CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../TaskInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../ThreadInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../Types.h
 
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../JobRelatedSlaves.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../MessageInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../Slave.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagement.cpp
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagement.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagementInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveRelatedTasks.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../StateJobInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../StateTaskInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SynchronizedQueue.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../TaskInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../ThreadInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../Types.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../VectorSlaves.h
+
+CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o: ../SlaveRelatedTasks.cpp
+CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o: ../SlaveRelatedTasks.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o: ../Types.h
 
 CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o: ../Alphabet.h
 CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o: ../GenerateHashPass.h
@@ -175,6 +197,16 @@ CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o: /usr/include/qt
 
 CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o: ../ThreadInterface.cpp
 CMakeFiles/ThreadsManagementSystem.dir/ThreadInterface.cpp.o: ../ThreadInterface.h
+
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../MessageInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../Slave.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../SlaveInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../StateTaskInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../TaskInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../ThreadInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../Types.h
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../VectorSlaves.cpp
+CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o: ../VectorSlaves.h
 
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../Alphabet.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../GenerateHashPass.h
