@@ -59,11 +59,13 @@ bool ThreadsManagementSystemPassBreak::JobManagementPass::isState() {
 
 
 void ThreadsManagementSystemPassBreak::JobManagementPass::addSatateTask(
-        std::unique_ptr<const ThreadsManagementSystem::StateTaskInterface> stateTask) {
+        std::unique_ptr<const ThreadsManagementSystem::StateTaskInterface> && stateTask) {
 
     if(stateTask->getState() == TypeStateTask::solution) {
         const StateTaskPass* stateTaspPtr = dynamic_cast<const StateTaskPass*>(stateTask.release());
         if(stateTaspPtr != nullptr) {
+            std::cout << "\n\n JobManagement Reciv solution => " << stateTaspPtr->getSolution() << "\n\n" ;
+
             std::unique_ptr<const StateTaskPass> stateTask_P{stateTaspPtr};
             noHaveTask();
             haveState();
@@ -76,6 +78,8 @@ void ThreadsManagementSystemPassBreak::JobManagementPass::addSatateTask(
         else{
             std::cout << " \n\n JobManagementPass error bad cast in function addSatateTask \n\n ";
         }
+    } else if(stateTask->getState() == TypeStateTask::state){
+        ++numberTaskExecuted;
     }
 }
 
@@ -110,3 +114,17 @@ ThreadsManagementSystemPassBreak::JobManagementPass::JobManagementPass(
     stateJob.setIdJob(this->job->getId());
     message.setIdJob(this->job->getId());
 }
+
+void ThreadsManagementSystemPassBreak::JobManagementPass::noHaveSate() {
+    haveStateJob = false;
+}
+
+bool ThreadsManagementSystemPassBreak::JobManagementPass::hasExecuted() {
+    if(isTask() == false) {
+        if(numberTaskExecuted == numberTaskSend){
+            return true;
+        }
+    }
+    return false;
+}
+

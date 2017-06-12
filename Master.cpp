@@ -23,7 +23,7 @@ namespace ThreadsManagementSystem {
             if (jobs.top()->isTask()) {
                 slaveMenagment->addTask(jobs.top()->getTask());
                 ///UpLoad state job to frotend
-                dataBaseMenagment->addStateJob(jobs.top()->getState());
+                dataBaseMenagment->addStateJob(std::move(jobs.top()->getState()));
             }
             else
             {
@@ -53,6 +53,7 @@ namespace ThreadsManagementSystem {
             if (dataBaseMenagment->getNumberJob() > 0) {
                 std::unique_ptr<const JobInterface> job = dataBaseMenagment->getJob();
 
+
                 std::shared_ptr<JobManagementInterface> jobManagment = jobManagmnetFactory->getJobManagment(std::move(job));
 
                 jobs.push(jobManagment);
@@ -70,16 +71,23 @@ namespace ThreadsManagementSystem {
     void Master::getSolutionFromSlaveManagment() {
         try {
             if (slaveMenagment->getNumberStateTask() > 0) {
+
                 std::unique_ptr<const StateTaskInterface> solution = slaveMenagment->getStateTask();
-                std::shared_ptr<JobManagementInterface> jobManagment = jobsWaitSolution[solution->getIdJob()];
-                jobManagment->addSatateTask(std::move(solution));
 
-                dataBaseMenagment->addStateJob(jobManagment->getState());
+                if(jobsWaitSolution.find(solution->getIdJob()) != jobsWaitSolution.end()) {
 
-                if(jobManagment->isSolutions()) {
-                    slaveMenagment->addMessage(jobManagment->getMessage());
-                    jobsWaitSolution.erase(jobManagment->getIdJob());
-                    jobsExecutedWaitSolution.remove(jobManagment);
+                    std::shared_ptr<JobManagementInterface> jobManagment = jobsWaitSolution[solution->getIdJob()];
+
+                    jobManagment->setTimeExcuteTask(slaveMenagment->getTimeTaskExecute(solution->getIdJob()));
+
+                    jobManagment->addSatateTask(std::move(solution));
+
+                    dataBaseMenagment->addStateJob(jobManagment->getState());
+                    if (jobManagment->isSolutions()) {
+                        slaveMenagment->addMessage(jobManagment->getMessage());
+                        jobsWaitSolution.erase(jobManagment->getIdJob());
+                        jobsExecutedWaitSolution.remove(jobManagment);
+                    }
                 }
             }
         } catch (...) {
@@ -92,16 +100,22 @@ namespace ThreadsManagementSystem {
     void Master::jobNotHaveSolution() {
         try {
             if (jobsExecutedWaitSolution.size() > 0) {
+
                 for (std::list<std::shared_ptr<JobManagementInterface>>::iterator it = jobsExecutedWaitSolution.begin();
                      it != jobsExecutedWaitSolution.end(); ++it) {
-                    if (slaveMenagment->getNumberSlaveExecuteJob((*it)->getIdJob()) == 0) {
+
+                    if ((*it)->hasExecuted()) {
+                        std::cout << "\n\n Has EXECUTED ";
                         std::unique_ptr<const StateTaskInterface> solution = std::make_unique<const ThreadsManagementSystemPassBreak::StateTaskPass>(TypeStateTask::solution);
+
                         (*it)->addSatateTask(std::move(solution));
                         dataBaseMenagment->addStateJob((*it)->getState());
                         jobsWaitSolution.erase((*it)->getIdJob());
                         jobsExecutedWaitSolution.erase(it);
+                        break;
                     }
                 }
+
 
             }
         } catch (...) {
@@ -112,20 +126,35 @@ namespace ThreadsManagementSystem {
 
     }
 
-    Master::Master(std::unique_ptr<ConnectionApiInterface> && connect) {
+    Master::Master(std::shared_ptr<ConnectionApiInterface> && connect) {
         slaveMenagment = std::make_unique<SlaveManagement>(60);
-        dataBaseMenagment = std::make_unique<ThreadsManagementSystemPassBreak::JobFactoryPass>(std::move(connect));
+        dataBaseMenagment = std::make_unique<ThreadsManagementSystemPassBreak::JobFactoryPass>(connect);
     }
 
     bool Master::start() {
         slaveMenagment->start();
         dataBaseMenagment->start();
-        return ThreadInterface::start();
+
+        if(!tRunning) {
+            tRunning = true;
+            tWorker = std::make_unique<std::thread>(&Master::run, this);
+            return true;
+        }
+        return false;
     }
 
     bool Master::stop() {
         slaveMenagment->stop();
         dataBaseMenagment->stop();
-        return ThreadInterface::stop();
+
+        if(tRunning) {
+            tRunning = false;
+            tWorker->join();
+            tWorker.reset(nullptr);
+            return true;
+        }
+        return false;
     }
 }
+
+

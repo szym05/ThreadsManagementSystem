@@ -50,9 +50,14 @@ namespace ThreadsManagementSystem {
 
     void SlaveManagement::addSlaveToAvailable(TypeIdSlave idSlave, TypeIdJob idJob,
                                                                                 TypeIdTask idTask) {
-
+#ifdef DEBUG_SYSTEM_CONSOL
+        std::cout << "\n ready " << idSlave;
+#endif
         jobRelatedSlaves.removeSlaveFromJob(idJob, idTask, idSlave);
         availableSlaves.push(idSlave);
+#ifdef DEBUG_SYSTEM_CONSOL
+        std::cout << " after";
+#endif
     }
 
 
@@ -75,11 +80,19 @@ namespace ThreadsManagementSystem {
 
     void SlaveManagement::run() {
         while (tRunning) {
+
+#ifdef DEBUG_SYSTEM_CONSOL
+           /* std::cout << "\n\n SIZE \n"
+                      << "\n Task " << sendTaskQueue.size()
+                      << "\n SLaves Avaliable "  << availableSlaves.size()
+                      << "\n Message "  << sendMessageInterfaceQueue.size() << "\n";*/
+#endif
             sendTaskToSlave();
             sendMessageToSlave();
 
 
-            std::this_thread::sleep_for(std::chrono::seconds(interval));
+
+            std::this_thread::sleep_for(std::chrono::seconds(1));
         }
     }
 
@@ -87,7 +100,6 @@ namespace ThreadsManagementSystem {
 ///SEND
     void SlaveManagement::sendTaskToSlave() {
         while ((availableSlaves.size() > 0) && (sendTaskQueue.size() > 0)) {
-
             TypeIdSlave slave = availableSlaves.pop();
             auto task = sendTaskQueue.pop();
 
@@ -114,6 +126,7 @@ namespace ThreadsManagementSystem {
     }
 
     void SlaveManagement::messageTerminateAllSlave(TypeIdJob idJob) {
+        std::cout << "\n\n\n TERMINATE SLAVES FOR JOB " << idJob << "\n\n\n";
         auto list = jobRelatedSlaves.getListJobRelatedSlaves(idJob);
         jobRelatedSlaves.removeAll(idJob);
 

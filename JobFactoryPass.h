@@ -20,7 +20,7 @@ namespace ThreadsManagementSystemPassBreak {
 
     class JobFactoryPass : public JobFactoryInterface {
     public:
-        JobFactoryPass( std::unique_ptr<ConnectionApiInterface> &&apiConnect);
+        JobFactoryPass( std::shared_ptr<ConnectionApiInterface> &apiConnect);
 
         using JobInterface = ThreadsManagementSystem::JobInterface;
         using StateJobInterface =ThreadsManagementSystem::StateJobInterface;
@@ -28,7 +28,7 @@ namespace ThreadsManagementSystemPassBreak {
     protected:
         SynchronizedQueue<std::unique_ptr<const JobInterface>> jobsToDo;
         SynchronizedQueue<std::unique_ptr<const StateJobInterface>> stateJobsToUpload;
-        std::unique_ptr<ConnectionApiInterface> apiConnect;
+        std::shared_ptr<ConnectionApiInterface> apiConnect;
 
     public:
         std::unique_ptr<const JobInterface> getJob() override;

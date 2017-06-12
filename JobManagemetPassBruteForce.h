@@ -35,8 +35,6 @@ namespace ThreadsManagementSystemPassBreak {
         void intializeCurrentLengthPassw();
         void updateStateJobInGetTask();
 
-    protected:
-        virtual void noHaveSate() override;
     };
 }
 

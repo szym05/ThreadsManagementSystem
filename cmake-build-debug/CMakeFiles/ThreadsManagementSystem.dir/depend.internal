@@ -336,13 +336,29 @@ CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiPass.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/GenerateHashPass.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactoryInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/MasterInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobPass.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SynchronizedQueue.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPass.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.h

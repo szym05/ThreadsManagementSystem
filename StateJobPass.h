@@ -5,6 +5,7 @@
 #ifndef THREADSMANAGEMENTSYSTEM_STATEJOBPASS_H
 #define THREADSMANAGEMENTSYSTEM_STATEJOBPASS_H
 
+#include <ostream>
 #include "Types.h"
 #include "TypesPassBreak.h"
 #include "StateJobInterface.h"
@@ -86,7 +87,6 @@ namespace ThreadsManagementSystemPassBreak {
             numberExecutedSteps += resolutionSteps;
         }
 
-
     protected:
         double progress {};
         double timeEnd {};
@@ -94,6 +94,22 @@ namespace ThreadsManagementSystemPassBreak {
         TypeSolution solution {empty_TypeSolution};
         TypeNumberSteps numberExecutedSteps {};
         TypeLengthPassw lengthOfCheckedPasswords {};
+
+
+    public:
+       friend std::ostream &operator<<(std::ostream &os, const ThreadsManagementSystemPassBreak::StateJobPass &pass) {
+            os << " progress: "
+               << pass.progress << " timeEnd: " << pass.timeEnd << " timeReal: " << pass.timeReal << " solution: "
+               << pass.solution << " numberExecutedSteps: " << pass.numberExecutedSteps << " lengthOfCheckedPasswords: "
+               << pass.lengthOfCheckedPasswords;
+            return os;
+        }
     };
+
+
+
+
+
 }
 #endif //THREADSMANAGEMENTSYSTEM_STATEJOBPASS_H
+

@@ -12,7 +12,7 @@ namespace ThreadsManagementSystem {
 
     class ThreadInterface {
     protected:
-        std::atomic_bool tRunning;
+        std::atomic_bool tRunning{false};
         std::unique_ptr<std::thread> tWorker;
         std::atomic_uint_fast64_t interval{1}; // In seconds
 

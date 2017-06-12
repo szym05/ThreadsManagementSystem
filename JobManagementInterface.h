@@ -21,9 +21,11 @@ namespace ThreadsManagementSystem {
 
         virtual std::unique_ptr< TaskInterface> getTask() = 0;
 
-        virtual void addSatateTask(std::unique_ptr<const StateTaskInterface> stateTask) = 0;
+        virtual void addSatateTask(std::unique_ptr<const StateTaskInterface> && stateTask) = 0;
 
         virtual bool isMessage() = 0;
+
+        virtual bool hasExecuted() = 0;
 
         virtual bool isSolutions() = 0;
 
@@ -32,6 +34,8 @@ namespace ThreadsManagementSystem {
         virtual std::unique_ptr<const StateJobInterface> getState() = 0;
 
         virtual TypeIdJob getIdJob() = 0;
+
+        virtual void setTimeExcuteTask(double timeExcuteTask) = 0;
     };
 
 }

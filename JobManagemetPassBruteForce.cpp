@@ -65,6 +65,9 @@ ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::getTask() {
     }
 
     auto passwordBeginSearch = std::make_unique<GeneratePass>(*nextTaskGenerator);
+    passwordBeginSearch->setNumberStepsExecuted(0);
+    passwordBeginSearch->setNumberStepsMax(job->getResolutionStepTask());
+
     auto alphabetP = std::make_unique<const Alphabet>( *(job->getAlphabet()));
 
     std::unique_ptr< ThreadsManagementSystem::TaskInterface> task = std::make_unique< TaskPassBruteForce>(
@@ -81,6 +84,7 @@ ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::getTask() {
 
     updateStateJobInGetTask();
 
+    ++numberTaskSend;
 
     return task;
 }
@@ -93,7 +97,3 @@ ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::JobManagemetPassBr
     nextTaskGenerator = std::make_unique<GeneratePass>(maxNumberSteps,this->job->getAlphabet()->size());
 }
 
-
-void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::noHaveSate() {
-    haveStateJob = false;
-}

@@ -9,7 +9,7 @@
 namespace ThreadsManagementSystemPassBreak{
     class GenerateHashPass{
     public:
-        static Hash getHashMethodMD5(TypeSolution pass){
+        static Hash getHashMethodMD5(const TypeSolution pass){
             return QCryptographicHash::hash(pass.c_str(), QCryptographicHash::Md5).toHex().toStdString();
         }
     };

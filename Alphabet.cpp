@@ -11,14 +11,14 @@ size_t ThreadsManagementSystemPassBreak::Alphabet::size() const {
 }
 
 TypeSignAlphabet ThreadsManagementSystemPassBreak::Alphabet::operator[](long long  i) const {
-    if( i > 0 && i < alphabet.size()) {
+    if( i >= 0 && i < alphabet.size()) {
         return alphabet[i];
     }
     return empty_TypeSignAlphabet;
 }
 
 TypeSignAlphabet ThreadsManagementSystemPassBreak::Alphabet::getSign(long long i) const {
-    if( i > 0 && i < alphabet.size()) {
+    if( i >= 0 && i < alphabet.size()) {
         char z = alphabet[i];
         return z;
     }
@@ -38,4 +38,10 @@ std::unique_ptr<ThreadsManagementSystemPassBreak::Alphabet>  ThreadsManagementSy
     }
 
     return std::unique_ptr<Alphabet>(this);
+}
+
+std::ostream &ThreadsManagementSystemPassBreak::operator<<(std::ostream &os,
+                                                           const ThreadsManagementSystemPassBreak::Alphabet &alphabet) {
+    os << "alphabet: " << alphabet.alphabet;
+    return os;
 }

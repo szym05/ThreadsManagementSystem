@@ -1,12 +1,13 @@
 
+#include <iostream>
 #include "GeneratePass.h"
 
-size_t ThreadsManagementSystemPassBreak::GeneratePass::size() {
+size_t ThreadsManagementSystemPassBreak::GeneratePass::size() const{
     return nextPass.size();
 }
 
-size_t ThreadsManagementSystemPassBreak::GeneratePass::operator[](long long i) {
-    if(i > 0 && i < nextPass.size())
+size_t ThreadsManagementSystemPassBreak::GeneratePass::operator[](long long i)const {
+    if(i >= 0 && i < nextPass.size())
     {
         return nextPass[i];
     }
@@ -26,7 +27,7 @@ ThreadsManagementSystemPassBreak::GeneratePass &ThreadsManagementSystemPassBreak
         else{
             nextPass[index] = 0;
             ++index;
-            if(nextPass.size() <= index){
+            if(nextPass.size() == index){
                 nextPass.push_back(1);
                 break;
             }
@@ -51,7 +52,7 @@ void ThreadsManagementSystemPassBreak::GeneratePass::initializeNextPass() {
 }
 
 size_t ThreadsManagementSystemPassBreak::GeneratePass::getDigit(long long i) {
-    if(i > 0 && i < nextPass.size())
+    if(i >= 0 && i < nextPass.size())
     {
         return nextPass[i];
     }
@@ -70,4 +71,33 @@ ThreadsManagementSystemPassBreak::GeneratePass::GeneratePass(TypeNumberSteps num
         : numberStepsMax(numberSteps), baseAlphabet(sizeAlphabet-1) {}
 
 
+ThreadsManagementSystemPassBreak::GeneratePass::GeneratePass(
+        const ThreadsManagementSystemPassBreak::GeneratePass &generatePass) {
 
+    numberStepsMax = generatePass.numberStepsMax;
+    numberStepsExecuted = generatePass.numberStepsExecuted;
+    nextPass.resize(generatePass.size());
+    baseAlphabet = generatePass.baseAlphabet;
+
+    for (int i = 0; i < nextPass.size(); ++i) {
+        nextPass[i] = generatePass.nextPass[i];
+    }
+
+}
+
+void ThreadsManagementSystemPassBreak::GeneratePass::setNumberStepsMax(TypeNumberSteps numberStepsMax) {
+    GeneratePass::numberStepsMax = numberStepsMax;
+}
+
+void ThreadsManagementSystemPassBreak::GeneratePass::setNumberStepsExecuted(TypeNumberSteps numberStepsExecuted) {
+    GeneratePass::numberStepsExecuted = numberStepsExecuted;
+}
+
+std::ostream &ThreadsManagementSystemPassBreak::operator<<(std::ostream &os,
+                                                           const ThreadsManagementSystemPassBreak::GeneratePass &pass) {
+    os << "numberStepsMax: " << pass.numberStepsMax << " numberStepsExecuted: " << pass.numberStepsExecuted
+       << " baseAlphabet: " << pass.baseAlphabet << " nextPass: ";
+    for( const size_t & k : pass.nextPass)
+         os << k;
+    return os;
+}

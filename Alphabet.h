@@ -6,6 +6,7 @@
 #define THREADSMANAGEMENTSYSTEM_ALPHABET_H
 
 #include <bits/unique_ptr.h>
+#include <ostream>
 #include "Alphabet.h"
 #include "TypesPassBreak.h"
 
@@ -26,6 +27,9 @@ namespace ThreadsManagementSystemPassBreak {
 
     private:
         TypeAlphabet alphabet {empty_TypeAlphabet};
+
+    public:
+        friend std::ostream &operator<<(std::ostream &os, const Alphabet &alphabet);
 
     };
 }

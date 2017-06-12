@@ -2,12 +2,13 @@
 // Created by szymon on 09.06.17.
 //
 
+#include <iostream>
 #include "TaskPassBruteForce.h"
 
 std::unique_ptr<ThreadsManagementSystem::StateTaskInterface>
 ThreadsManagementSystemPassBreak::TaskPassBruteForce::getStateTask() {
     std::lock_guard<std::mutex> lck{mBlock};
-    return std::make_unique<StateTaskPass>(idJob, idTask, TypeStateTask::state, solution, numberStepsExecuted);
+    return std::make_unique<StateTaskPass>(idJob, idTask, state, solution, numberStepsExecuted);
 }
 
 void ThreadsManagementSystemPassBreak::TaskPassBruteForce::terminate() {
@@ -41,21 +42,36 @@ void ThreadsManagementSystemPassBreak::TaskPassBruteForce::passBreakMd5() {
 
     Hash hash_TMP;
     TypeSolution solutionTmp;
+#ifdef DEBUG_SYSTEM_CONSOL
+    std::cout << "\n pre nextPass " << nextPass->size() << "size alhabet " << alphabet->size() << " generator " << *nextPass << "\n";
+#endif
 
    while(tRunning && nextPass->next())
    {
-       solutionTmp = empty_TypeSolution;
+       solutionTmp.clear();
+
        for(size_t i = 0; i < nextPass->size(); ++i){
-           solutionTmp.push_back((*alphabet)[(*nextPass)[i]]);
+           char k = (*alphabet)[(*nextPass)[i]];
+
+           solutionTmp.push_back(k);
        }
 
        hash_TMP = GenerateHashPass::getHashMethodMD5(solutionTmp);
+#ifdef DEBUG_SYSTEM_CONSOL
+       if(solutionTmp == "asdf"){
+           std::cout<<  "\n spultion = " << solutionTmp << " hash " <<hash ;
+       }
+#endif
 
        ++numberStepsExecuted;
 
        if(hash_TMP == hash){
            lck.lock();
+#ifdef DEBUG_SYSTEM_CONSOL
+           std::cout<<  "\n soultion = " << solutionTmp;
+#endif
            solution = solutionTmp;
+           state = TypeStateTask ::solution;
            lck.unlock();
            break;
        }

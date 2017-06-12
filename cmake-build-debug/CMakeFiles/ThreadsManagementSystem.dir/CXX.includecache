@@ -13,6 +13,8 @@ Alphabet.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
 bits/unique_ptr.h
 -
+ostream
+-
 Alphabet.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
 TypesPassBreak.h
@@ -45,6 +47,8 @@ QCryptographicHash
 -
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.cpp
+iostream
+-
 GeneratePass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.h
 
@@ -52,6 +56,8 @@ GeneratePass.h
 memory
 -
 vector
+-
+ostream
 -
 Alphabet.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
@@ -161,6 +167,8 @@ JobManagementPass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
+ostream
+-
 JobInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
 Alphabet.h
@@ -225,6 +233,8 @@ Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp
+iostream
+-
 Slave.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
 
@@ -305,6 +315,8 @@ unordered_map
 /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobPass.h
+ostream
+-
 Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 TypesPassBreak.h
@@ -357,6 +369,8 @@ Alphabet.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.cpp
+iostream
+-
 TaskPassBruteForce.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.h
 
@@ -393,6 +407,8 @@ string
 -
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.cpp
+iostream
+-
 VectorSlaves.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.h
 
@@ -417,6 +433,12 @@ QtCore
 -
 TaskPassBruteForce.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.h
+ConnectionApiPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiPass.h
+JobPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
+Master.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
 
 /usr/include/qt/QtCore/QCryptographicHash
 qcryptographichash.h

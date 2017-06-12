@@ -31,23 +31,26 @@ namespace ThreadsManagementSystemPassBreak {
         bool haveTasks = true;
         bool haveMessage = false;
         bool haveSolution = false;
+        bool hasExecutedB = false;
         const std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
         double timeExcuteTask = 0.0;
         TypeIdTask idTask{first_TypeIdTask};
+        TypeNumberSteps numberTaskSend = 0;
+        TypeNumberSteps numberTaskExecuted = 0;
 
     protected:
 
         virtual void setTimeForStartInStateJob();
         virtual void noHaveTask();
         virtual void haveState();
-        virtual void noHaveSate() = 0;
+        virtual void noHaveSate();
         virtual void haveMessageF();
         virtual void noHaveMessageF();
         virtual void setTimeToEnd(double tasksToEnd);
 
 
 
-        void setTimeExcuteTask(double timeExcuteTask);
+        void setTimeExcuteTask(double timeExcuteTask) override ;
 
 
 
@@ -55,7 +58,7 @@ namespace ThreadsManagementSystemPassBreak {
 
         bool isState() override;
 
-        void addSatateTask(std::unique_ptr<const ThreadsManagementSystem::StateTaskInterface> stateTask) override;
+        void addSatateTask(std::unique_ptr<const ThreadsManagementSystem::StateTaskInterface> &&stateTask) override;
 
         bool isMessage() override;
 
@@ -67,6 +70,8 @@ namespace ThreadsManagementSystemPassBreak {
 
     public:
         virtual void nothing() = 0;
+
+        bool hasExecuted() override;
 
     };
 }

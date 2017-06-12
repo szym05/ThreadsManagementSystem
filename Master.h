@@ -36,7 +36,7 @@ namespace ThreadsManagementSystem {
 
     protected:
     public:
-        Master(std::unique_ptr<ConnectionApiInterface> && connect);
+        Master(std::shared_ptr<ConnectionApiInterface> && connect);
 
         bool start() override;
 

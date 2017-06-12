@@ -1,4 +1,5 @@
 
+#include <iostream>
 #include "Slave.h"
 
 std::unique_ptr<ThreadsManagementSystem::StateTaskInterface> ThreadsManagementSystem::Slave::getStateTask() {

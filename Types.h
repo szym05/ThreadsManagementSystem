@@ -2,6 +2,9 @@
 #ifndef THREADSMANAGEMENTSYSTEM_TYPES_H
 #define THREADSMANAGEMENTSYSTEM_TYPES_H
 
+/***********************************************/
+//#define DEBUG_SYSTEM_CONSOL
+/*********************************************/
 #include <memory>
 
 using TypeIdJob = unsigned long long;
@@ -19,16 +22,24 @@ using TypeNumberSlave = unsigned int;
 
 
 enum class TypeMessage : char{
-    empty,
-    terminate
+    empty = 0,
+    terminate = 1
 };
 
 
 enum class TypeStateTask : char{
-    empty,
-    state,
-    solution
+    empty = 0,
+    state = 1,
+    solution = 2
 };
+
+
+template <typename Enumeration>
+auto as_integer(Enumeration const value)
+-> typename std::underlying_type<Enumeration>::type
+{
+    return static_cast<typename std::underlying_type<Enumeration>::type>(value);
+}
 
 
 #endif //THREADSMANAGEMENTSYSTEM_TYPES_H

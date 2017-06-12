@@ -36,6 +36,7 @@ namespace ThreadsManagementSystem {
     protected:
         TypeIdJob idJob {empty_TypeIdJob};
         TypeIdTask idTask {empty_TypeIdTask};
+        TypeStateTask state{TypeStateTask ::state};
 
     };
 
