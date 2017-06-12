@@ -20,25 +20,23 @@ namespace ThreadsManagementSystem {
 
 /**********************************************************************************************/
     void Master::getTaskFromJobManagementAddToSlaveManagment() {
-        if (jobs.size() > 0) {
             if (jobs.top()->isTask()) {
                 slaveMenagment->addTask(jobs.top()->getTask());
-                ///UpLoad state job to backend
+                ///UpLoad state job to frotend
                 dataBaseMenagment->addStateJob(jobs.top()->getState());
-            } else {
+            }
+            else
+            {
                 if (!jobs.top()->isSolutions()) {
                     jobsExecutedWaitSolution.push_back(jobs.top());
                 }
                 jobs.pop();
-                getTaskFromJobManagementAddToSlaveManagment();
             }
-        }
-
     }
 
     void Master::getTaskFromJobManagement() {
         try {
-            if (slaveMenagment->getNumberAvaibleSlaves() > 0) {
+            while ((slaveMenagment->getNumberAvaibleSlaves() > 0) && (jobs.size() > 0)) {
                 getTaskFromJobManagementAddToSlaveManagment();
             }
         }
@@ -56,7 +54,7 @@ namespace ThreadsManagementSystem {
                 std::unique_ptr<const JobInterface> job = dataBaseMenagment->getJob();
 
                 std::shared_ptr<JobManagementInterface> jobManagment = jobManagmnetFactory->getJobManagment(std::move(job));
-                
+
                 jobs.push(jobManagment);
                 jobsWaitSolution.insert(std::make_pair<TypeIdJob, std::shared_ptr<JobManagementInterface>>
                                                 (jobManagment->getIdJob(), std::move(jobManagment)));
@@ -75,10 +73,14 @@ namespace ThreadsManagementSystem {
                 std::unique_ptr<const StateTaskInterface> solution = slaveMenagment->getStateTask();
                 std::shared_ptr<JobManagementInterface> jobManagment = jobsWaitSolution[solution->getIdJob()];
                 jobManagment->addSatateTask(std::move(solution));
+
                 dataBaseMenagment->addStateJob(jobManagment->getState());
 
-                jobsWaitSolution.erase(jobManagment->getIdJob());
-                jobsExecutedWaitSolution.remove(jobManagment);
+                if(jobManagment->isSolutions()) {
+                    slaveMenagment->addMessage(jobManagment->getMessage());
+                    jobsWaitSolution.erase(jobManagment->getIdJob());
+                    jobsExecutedWaitSolution.remove(jobManagment);
+                }
             }
         } catch (...) {
             std::cout << " \n\n Exception in Master in getSolutionFromSlaveManagment ";

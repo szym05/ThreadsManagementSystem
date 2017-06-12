@@ -18,7 +18,7 @@ ThreadsManagementSystemPassBreak::GeneratePass &ThreadsManagementSystemPassBreak
     size_t index = 0;
 
     while(true){
-        if(nextPass[index] < (sizeAlphabet-1))
+        if(nextPass[index] < baseAlphabet)
         {
             ++nextPass[index];
             break;
@@ -26,6 +26,10 @@ ThreadsManagementSystemPassBreak::GeneratePass &ThreadsManagementSystemPassBreak
         else{
             nextPass[index] = 0;
             ++index;
+            if(nextPass.size() <= index){
+                nextPass.push_back(1);
+                break;
+            }
         }
     }
 
@@ -36,7 +40,7 @@ ThreadsManagementSystemPassBreak::GeneratePass &ThreadsManagementSystemPassBreak
 
 void ThreadsManagementSystemPassBreak::GeneratePass::next(size_t n) {
     for(size_t i = 0; i < n; ++i){
-        this->operator++();
+        ++(*this);
     }
 }
 
@@ -46,15 +50,6 @@ void ThreadsManagementSystemPassBreak::GeneratePass::initializeNextPass() {
     }
 }
 
-
-bool ThreadsManagementSystemPassBreak::GeneratePass::next() {
-    return numberStepsExecuted < numberStepsMax;
-}
-
-
-ThreadsManagementSystemPassBreak::GeneratePass::GeneratePass(TypeNumberSteps numberSteps, size_t sizeAlphabet)
-        : numberStepsMax(numberSteps), sizeAlphabet(sizeAlphabet) {}
-
 size_t ThreadsManagementSystemPassBreak::GeneratePass::getDigit(long long i) {
     if(i > 0 && i < nextPass.size())
     {
@@ -62,3 +57,17 @@ size_t ThreadsManagementSystemPassBreak::GeneratePass::getDigit(long long i) {
     }
     return 0;
 }
+
+
+bool ThreadsManagementSystemPassBreak::GeneratePass::next() {
+    return numberStepsExecuted < numberStepsMax;
+}
+
+
+
+///CONSTRUCTORS
+ThreadsManagementSystemPassBreak::GeneratePass::GeneratePass(TypeNumberSteps numberSteps, size_t sizeAlphabet)
+        : numberStepsMax(numberSteps), baseAlphabet(sizeAlphabet-1) {}
+
+
+

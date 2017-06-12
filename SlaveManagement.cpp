@@ -9,7 +9,7 @@ namespace ThreadsManagementSystem {
     }
 
     void SlaveManagement::addMessage(
-            std::unique_ptr<ThreadsManagementSystem::MessageInterface> &&message) {
+            std::unique_ptr<const ThreadsManagementSystem::MessageInterface> &&message) {
 
         sendMessageInterfaceQueue.push(std::move(message));
     }

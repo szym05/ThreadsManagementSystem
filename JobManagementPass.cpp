@@ -5,9 +5,6 @@
 #include <iostream>
 #include "JobManagementPass.h"
 
-std::unique_ptr<ThreadsManagementSystem::TaskInterface> ThreadsManagementSystemPassBreak::JobManagementPass::getTask() {
-    return std::unique_ptr<ThreadsManagementSystem::TaskInterface> ();
-}
 
 
 void ThreadsManagementSystemPassBreak::JobManagementPass::setTimeForStartInStateJob() {

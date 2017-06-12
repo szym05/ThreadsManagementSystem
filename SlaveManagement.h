@@ -31,7 +31,7 @@ namespace ThreadsManagementSystem{
 
         void addTask(std::unique_ptr<TaskInterface> &&task) override;
 
-        void addMessage(std::unique_ptr<MessageInterface> &&message) override;
+        void addMessage(std::unique_ptr<const MessageInterface> &&message) override;
 
         std::unique_ptr<const StateTaskInterface> getStateTask(TypeIdJob idJob, TypeIdTask idTask) override;
 
@@ -58,7 +58,7 @@ namespace ThreadsManagementSystem{
 
         SynchronizedQueue<std::unique_ptr<TaskInterface>> sendTaskQueue;
 
-        SynchronizedQueue<std::unique_ptr<MessageInterface>> sendMessageInterfaceQueue;
+        SynchronizedQueue<std::unique_ptr<const MessageInterface>> sendMessageInterfaceQueue;
         SynchronizedQueue<std::unique_ptr<const StateTaskInterface>> stateTasks;
 
     protected:

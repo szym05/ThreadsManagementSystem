@@ -27,7 +27,7 @@ namespace ThreadsManagementSystemPassBreak {
         Hash hash { empty_Hash };
         std::unique_ptr<const Alphabet> alphabet {nullptr};
         TypeSolution solution{empty_TypeSolution};
-        TypeNumberSteps numberStepsExecuted{};
+        std::atomic<TypeNumberSteps> numberStepsExecuted{};
     };
 }
 

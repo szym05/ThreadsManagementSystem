@@ -1,6 +1,4 @@
-//
-// Created by szymon on 10.06.17.
-//
+
 
 #include "JobFactoryPass.h"
 #include <iostream>

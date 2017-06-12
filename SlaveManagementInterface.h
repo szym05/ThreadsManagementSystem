@@ -14,7 +14,7 @@ namespace ThreadsManagementSystem {
     public:
         virtual void addTask(std::unique_ptr<TaskInterface> &&task) = 0;
 
-        virtual void addMessage(std::unique_ptr<MessageInterface> &&message) = 0;
+        virtual void addMessage(std::unique_ptr<const MessageInterface> &&message) = 0;
 
         virtual std::unique_ptr<const StateTaskInterface> getStateTask(TypeIdJob idJob, TypeIdTask idTask) = 0;
 

@@ -22,7 +22,6 @@ namespace ThreadsManagementSystemPassBreak {
 
         bool isSolutions() override;
 
-        std::unique_ptr<ThreadsManagementSystem::TaskInterface> getTask() override;
 
     protected:
         StateJobPass stateJob = StateJobPass(empty_TypeIdJob);

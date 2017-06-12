@@ -50,9 +50,9 @@ void ThreadsManagementSystemPassBreak::TaskPassBruteForce::passBreakMd5() {
        }
 
        hash_TMP = GenerateHashPass::getHashMethodMD5(solutionTmp);
-       lck.lock();
+
        ++numberStepsExecuted;
-       lck.unlock();
+
        if(hash_TMP == hash){
            lck.lock();
            solution = solutionTmp;

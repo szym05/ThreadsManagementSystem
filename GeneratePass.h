@@ -29,7 +29,7 @@ namespace ThreadsManagementSystemPassBreak {
     protected:
         TypeNumberSteps numberStepsMax {};
         TypeNumberSteps numberStepsExecuted {};
-        size_t sizeAlphabet {};
+        size_t baseAlphabet {};
         std::vector<size_t> nextPass{0};
     };
 };

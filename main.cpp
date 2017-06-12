@@ -6,7 +6,11 @@
 
 #include "TaskPassBruteForce.h"
 
+#include "ConnectionApiPass.h"
+#include "JobPass.h"
+
 int main() {
+
     std::string pas = "1123";
 
 
