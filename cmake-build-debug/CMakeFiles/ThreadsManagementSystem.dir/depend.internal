@@ -42,6 +42,63 @@ CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/TypesPassBreak.h
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/GenerateHashPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.cpp
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactoryInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SynchronizedQueue.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TypesPassBreak.h
+ /usr/include/qt/QtCore/QCryptographicHash
+ /usr/include/qt/QtCore/qarraydata.h
+ /usr/include/qt/QtCore/qatomic.h
+ /usr/include/qt/QtCore/qatomic_bootstrap.h
+ /usr/include/qt/QtCore/qatomic_cxx11.h
+ /usr/include/qt/QtCore/qatomic_msvc.h
+ /usr/include/qt/QtCore/qbasicatomic.h
+ /usr/include/qt/QtCore/qbytearray.h
+ /usr/include/qt/QtCore/qchar.h
+ /usr/include/qt/QtCore/qcompilerdetection.h
+ /usr/include/qt/QtCore/qconfig-bootstrapped.h
+ /usr/include/qt/QtCore/qconfig.h
+ /usr/include/qt/QtCore/qcryptographichash.h
+ /usr/include/qt/QtCore/qflags.h
+ /usr/include/qt/QtCore/qgenericatomic.h
+ /usr/include/qt/QtCore/qglobal.h
+ /usr/include/qt/QtCore/qglobalstatic.h
+ /usr/include/qt/QtCore/qlogging.h
+ /usr/include/qt/QtCore/qmutex.h
+ /usr/include/qt/QtCore/qnamespace.h
+ /usr/include/qt/QtCore/qnumeric.h
+ /usr/include/qt/QtCore/qobjectdefs.h
+ /usr/include/qt/QtCore/qobjectdefs_impl.h
+ /usr/include/qt/QtCore/qprocessordetection.h
+ /usr/include/qt/QtCore/qrefcount.h
+ /usr/include/qt/QtCore/qstring.h
+ /usr/include/qt/QtCore/qstringbuilder.h
+ /usr/include/qt/QtCore/qsysinfo.h
+ /usr/include/qt/QtCore/qsystemdetection.h
+ /usr/include/qt/QtCore/qtcore-config.h
+ /usr/include/qt/QtCore/qtypeinfo.h
+ /usr/include/qt/QtCore/qtypetraits.h
+ /usr/include/qt/QtCore/qversiontagging.h
 CMakeFiles/ThreadsManagementSystem.dir/JobManagementPass.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
@@ -119,6 +176,75 @@ CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/GenerateHashPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactoryInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Master.cpp
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/MasterInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/SynchronizedQueue.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPass.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/TypesPassBreak.h
+ /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.h
+ /usr/include/qt/QtCore/QCryptographicHash
+ /usr/include/qt/QtCore/qarraydata.h
+ /usr/include/qt/QtCore/qatomic.h
+ /usr/include/qt/QtCore/qatomic_bootstrap.h
+ /usr/include/qt/QtCore/qatomic_cxx11.h
+ /usr/include/qt/QtCore/qatomic_msvc.h
+ /usr/include/qt/QtCore/qbasicatomic.h
+ /usr/include/qt/QtCore/qbytearray.h
+ /usr/include/qt/QtCore/qchar.h
+ /usr/include/qt/QtCore/qcompilerdetection.h
+ /usr/include/qt/QtCore/qconfig-bootstrapped.h
+ /usr/include/qt/QtCore/qconfig.h
+ /usr/include/qt/QtCore/qcryptographichash.h
+ /usr/include/qt/QtCore/qflags.h
+ /usr/include/qt/QtCore/qgenericatomic.h
+ /usr/include/qt/QtCore/qglobal.h
+ /usr/include/qt/QtCore/qglobalstatic.h
+ /usr/include/qt/QtCore/qlogging.h
+ /usr/include/qt/QtCore/qmutex.h
+ /usr/include/qt/QtCore/qnamespace.h
+ /usr/include/qt/QtCore/qnumeric.h
+ /usr/include/qt/QtCore/qobjectdefs.h
+ /usr/include/qt/QtCore/qobjectdefs_impl.h
+ /usr/include/qt/QtCore/qprocessordetection.h
+ /usr/include/qt/QtCore/qrefcount.h
+ /usr/include/qt/QtCore/qstring.h
+ /usr/include/qt/QtCore/qstringbuilder.h
+ /usr/include/qt/QtCore/qsysinfo.h
+ /usr/include/qt/QtCore/qsystemdetection.h
+ /usr/include/qt/QtCore/qtcore-config.h
+ /usr/include/qt/QtCore/qtypeinfo.h
+ /usr/include/qt/QtCore/qtypetraits.h
+ /usr/include/qt/QtCore/qversiontagging.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o
  /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
  /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp

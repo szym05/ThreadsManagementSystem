@@ -8,7 +8,9 @@
 #include "JobInterface.h"
 #include "Alphabet.h"
 
+
 namespace ThreadsManagementSystemPassBreak {
+
  class JobPass : public  ThreadsManagementSystem::JobInterface{
  public:
      JobPass(TypeIdJob id, TypePriority priority, TypeHash hashType, const Hash &hash, TypeMethod method,
@@ -23,9 +25,16 @@ namespace ThreadsManagementSystemPassBreak {
              maxLengthPassword(maxLengthPassword),
              resolutionStepTask(resolutionStepTask) {}
 
-     std::unique_ptr<ThreadsManagementSystem::JobManagementInterface> getJobManagment() override {
-         return nullptr;
+     JobPass(const JobPass &job) : JobInterface(job) {
+         hashType = job.hashType;
+         hash = job.hash;
+         method = job.method;
+         alphabet = std::make_unique<Alphabet>(*(job.alphabet));
+         minLengthPassword = job.minLengthPassword;
+         maxLengthPassword = job.maxLengthPassword;
+         resolutionStepTask = job.resolutionStepTask;
      }
+
 
      TypeHash getHashType() const {
          return hashType;
@@ -53,6 +62,10 @@ namespace ThreadsManagementSystemPassBreak {
 
      TypeNumberSteps getResolutionStepTask() const {
          return resolutionStepTask;
+     }
+
+     TypeIdJob getId() const override {
+         return id;
      }
 
  protected:

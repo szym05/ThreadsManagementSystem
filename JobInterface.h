@@ -14,13 +14,15 @@ namespace ThreadsManagementSystem {
     public:
         JobInterface(TypeIdJob id, TypePriority priority) : id(id), priority(priority) {}
 
-        virtual std::unique_ptr<JobManagementInterface> getJobManagment() = 0;
 
-        TypeIdJob getId() const {
-            return id;
+        JobInterface(const JobInterface & job) {
+            id = job.id;
+            priority = job.priority;
         }
 
-        TypePriority getPriority() const {
+       virtual TypeIdJob getId()const = 0;
+
+        TypePriority getPriority()const {
             return priority;
         }
 

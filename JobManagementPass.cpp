@@ -5,6 +5,9 @@
 #include <iostream>
 #include "JobManagementPass.h"
 
+std::unique_ptr<ThreadsManagementSystem::TaskInterface> ThreadsManagementSystemPassBreak::JobManagementPass::getTask() {
+    return std::unique_ptr<ThreadsManagementSystem::TaskInterface> ();
+}
 
 
 void ThreadsManagementSystemPassBreak::JobManagementPass::setTimeForStartInStateJob() {
@@ -32,9 +35,7 @@ void ThreadsManagementSystemPassBreak::JobManagementPass::haveState() {
     haveStateJob = true;
 }
 
-void ThreadsManagementSystemPassBreak::JobManagementPass::noHaveSate() {
-    haveStateJob = false;
-}
+
 
 void ThreadsManagementSystemPassBreak::JobManagementPass::haveMessageF() {
     haveMessage = true;
@@ -46,6 +47,10 @@ void ThreadsManagementSystemPassBreak::JobManagementPass::noHaveMessageF() {
 
 
 ///////OVERRIDE
+
+bool ThreadsManagementSystemPassBreak::JobManagementPass::isSolutions() {
+    return haveSolution;
+}
 
 bool ThreadsManagementSystemPassBreak::JobManagementPass::isTask() {
     return haveTasks;
@@ -65,6 +70,7 @@ void ThreadsManagementSystemPassBreak::JobManagementPass::addSatateTask(
             std::unique_ptr<const StateTaskPass> stateTask_P{stateTaspPtr};
             noHaveTask();
             haveState();
+            haveSolution = true;
             stateJob.setProgress(1.0);
             stateJob.setTimeEnd(0.0);
             stateJob.setSolution(stateTask_P->getSolution());
@@ -102,7 +108,7 @@ TypeIdJob ThreadsManagementSystemPassBreak::JobManagementPass::getIdJob() {
 }
 
 ThreadsManagementSystemPassBreak::JobManagementPass::JobManagementPass(
-         std::unique_ptr<const JobPass> &&job) : job(std::move(job))
+         std::unique_ptr<const JobPass> &&job) : JobManagementInterface(), job(std::move(job))
 {
     stateJob.setIdJob(this->job->getId());
     message.setIdJob(this->job->getId());

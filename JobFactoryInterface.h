@@ -8,10 +8,10 @@
 
 namespace ThreadsManagementSystem {
 
-    class JobFactoryInterface {
+    class JobFactoryInterface : public ThreadInterface {
 
     public:
-        virtual std::unique_ptr<const JobInterface> getJob() = 0;
+        virtual std::unique_ptr<const JobInterface> getJob() = 0 ;
 
         virtual void addStateJob(std::unique_ptr<const StateJobInterface> &&stateJob) = 0 ;
 

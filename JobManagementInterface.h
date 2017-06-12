@@ -13,15 +13,19 @@ namespace ThreadsManagementSystem {
 
     class JobManagementInterface {
     public:
+        JobManagementInterface() {}
+
         virtual bool isTask() = 0;
 
         virtual bool isState() = 0;
 
-        virtual std::unique_ptr<const TaskInterface> getTask() = 0;
+        virtual std::unique_ptr< TaskInterface> getTask() = 0;
 
         virtual void addSatateTask(std::unique_ptr<const StateTaskInterface> stateTask) = 0;
 
         virtual bool isMessage() = 0;
+
+        virtual bool isSolutions() = 0;
 
         virtual std::unique_ptr<const MessageInterface> getMessage() = 0;
 

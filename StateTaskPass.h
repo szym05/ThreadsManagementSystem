@@ -13,6 +13,8 @@ namespace ThreadsManagementSystemPassBreak {
                                                              solution(solution),
                                                              numberStepsExecuted(numberStepsExecuted) {}
 
+        StateTaskPass(TypeStateTask state) : StateTaskInterface(state) {}
+
         virtual TypeStateTask getState() const {
             return state;
         };

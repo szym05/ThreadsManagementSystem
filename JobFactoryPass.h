@@ -21,7 +21,10 @@ namespace ThreadsManagementSystemPassBreak {
     using ThreadsManagementSystem::ConnectionApiInterface;
     using ThreadsManagementSystem::SynchronizedQueue;
 
-    class JobFactoryPass : public JobFactoryInterface, public ThreadInterface {
+    class JobFactoryPass : public JobFactoryInterface {
+    public:
+        JobFactoryPass( std::unique_ptr<ConnectionApiInterface> &&apiConnect);
+
         using JobInterface = ThreadsManagementSystem::JobInterface;
         using StateJobInterface =ThreadsManagementSystem::StateJobInterface;
 

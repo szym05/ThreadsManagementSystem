@@ -231,6 +231,33 @@ JobFactoryPass.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.s
 .PHONY : JobFactoryPass.cpp.s
 
+JobManagementFactory.o: JobManagementFactory.cpp.o
+
+.PHONY : JobManagementFactory.o
+
+# target to build an object file
+JobManagementFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o
+.PHONY : JobManagementFactory.cpp.o
+
+JobManagementFactory.i: JobManagementFactory.cpp.i
+
+.PHONY : JobManagementFactory.i
+
+# target to preprocess a source file
+JobManagementFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.i
+.PHONY : JobManagementFactory.cpp.i
+
+JobManagementFactory.s: JobManagementFactory.cpp.s
+
+.PHONY : JobManagementFactory.s
+
+# target to generate assembly for a file
+JobManagementFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.s
+.PHONY : JobManagementFactory.cpp.s
+
 JobManagementPass.o: JobManagementPass.cpp.o
 
 .PHONY : JobManagementPass.o
@@ -311,6 +338,33 @@ JobRelatedSlaves.s: JobRelatedSlaves.cpp.s
 JobRelatedSlaves.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.s
 .PHONY : JobRelatedSlaves.cpp.s
+
+Master.o: Master.cpp.o
+
+.PHONY : Master.o
+
+# target to build an object file
+Master.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o
+.PHONY : Master.cpp.o
+
+Master.i: Master.cpp.i
+
+.PHONY : Master.i
+
+# target to preprocess a source file
+Master.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.i
+.PHONY : Master.cpp.i
+
+Master.s: Master.cpp.s
+
+.PHONY : Master.s
+
+# target to generate assembly for a file
+Master.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.s
+.PHONY : Master.cpp.s
 
 Slave.o: Slave.cpp.o
 
@@ -522,6 +576,9 @@ help:
 	@echo "... JobFactoryPass.o"
 	@echo "... JobFactoryPass.i"
 	@echo "... JobFactoryPass.s"
+	@echo "... JobManagementFactory.o"
+	@echo "... JobManagementFactory.i"
+	@echo "... JobManagementFactory.s"
 	@echo "... JobManagementPass.o"
 	@echo "... JobManagementPass.i"
 	@echo "... JobManagementPass.s"
@@ -531,6 +588,9 @@ help:
 	@echo "... JobRelatedSlaves.o"
 	@echo "... JobRelatedSlaves.i"
 	@echo "... JobRelatedSlaves.s"
+	@echo "... Master.o"
+	@echo "... Master.i"
+	@echo "... Master.s"
 	@echo "... Slave.o"
 	@echo "... Slave.i"
 	@echo "... Slave.s"

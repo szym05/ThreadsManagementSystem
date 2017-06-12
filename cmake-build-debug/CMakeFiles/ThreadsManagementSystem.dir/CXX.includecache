@@ -11,6 +11,8 @@ Alphabet.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
+bits/unique_ptr.h
+-
 Alphabet.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Alphabet.h
 TypesPassBreak.h
@@ -88,6 +90,26 @@ TypesPassBreak.h
 Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
 
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.cpp
+iostream
+-
+JobManagementFactory.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+JobManagementFactoryInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactoryInterface.h
+JobManagemetPassBruteForce.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.h
+JobPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactoryInterface.h
+JobInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
+JobManagementInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementInterface.h
+
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementInterface.h
 memory
 -
@@ -111,14 +133,14 @@ JobManagementPass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
 JobManagementInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementInterface.h
-JobPass.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
 StateJobPass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/StateJobPass.h
 StateTaskPass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskPass.h
 MessageInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
+JobPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.cpp
 JobManagemetPassBruteForce.h
@@ -129,14 +151,14 @@ cmath
 -
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.h
-JobManagementPass.h
-/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
 GeneratePass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/GeneratePass.h
 TaskPassBruteForce.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskPassBruteForce.h
 TaskInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/TaskInterface.h
+JobManagementPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementPass.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
 JobInterface.h
@@ -161,6 +183,40 @@ memory
 -
 SlaveRelatedTasks.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/Master.cpp
+iostream
+-
+Master.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
+SlaveManagement.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.h
+JobFactoryPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryPass.h
+StateTaskPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/StateTaskPass.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
+MasterInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/MasterInterface.h
+SlaveManagementInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
+JobFactoryInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobFactoryInterface.h
+ConnectionApiInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiInterface.h
+unordered_map
+-
+list
+-
+JobManagementFactory.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/MasterInterface.h
+memory
+-
+ThreadInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/MessageInterface.h
 memory

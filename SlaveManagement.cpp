@@ -61,6 +61,15 @@ namespace ThreadsManagementSystem {
     }
 
 
+    size_t SlaveManagement::getNumberStateTask() {
+        return stateTasks.size();
+    }
+
+
+    TypeNumberSlave SlaveManagement::getNumberSlaveExecuteJob(TypeIdJob idJob) {
+        return jobRelatedSlaves.numberSlaveExecuteTaskWithJob(idJob);
+    }
+
 ///////// TASK MENAGEMENT////////////////////
 
 

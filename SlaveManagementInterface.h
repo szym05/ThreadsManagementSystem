@@ -34,6 +34,10 @@ namespace ThreadsManagementSystem {
 
         virtual void registerSlave(TypeIdSlave slave) = 0;
 
+        virtual size_t getNumberStateTask() = 0;
+
+        virtual TypeNumberSlave getNumberSlaveExecuteJob(TypeIdJob idJob) = 0;
+
     };
 }
 #endif //THREADSMANAGEMENTSYSTEM_SLAVEMANAGEMENTINTERFACE_H_H

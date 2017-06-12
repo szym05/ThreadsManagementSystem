@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o"
   "ThreadsManagementSystem.pdb"
   "ThreadsManagementSystem"
 )

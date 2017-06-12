@@ -24,3 +24,18 @@ TypeSignAlphabet ThreadsManagementSystemPassBreak::Alphabet::getSign(long long i
     }
     return empty_TypeSignAlphabet;
 }
+
+
+ThreadsManagementSystemPassBreak::Alphabet::Alphabet(const ThreadsManagementSystemPassBreak::Alphabet &alphabet) {
+
+    this->alphabet = alphabet.alphabet;
+}
+
+std::unique_ptr<ThreadsManagementSystemPassBreak::Alphabet>  ThreadsManagementSystemPassBreak::Alphabet::operator=(const ThreadsManagementSystemPassBreak::Alphabet &alphabet) {
+
+    if(this != &alphabet){
+        this->alphabet = alphabet.alphabet;
+    }
+
+    return std::unique_ptr<Alphabet>(this);
+}

@@ -5,30 +5,38 @@
 #ifndef THREADSMANAGEMENTSYSTEM_JOBMANAGEMETPASSBRUTEFORCE_H
 #define THREADSMANAGEMENTSYSTEM_JOBMANAGEMETPASSBRUTEFORCE_H
 
-#include "JobManagementPass.h"
+
 #include "GeneratePass.h"
 #include "TaskPassBruteForce.h"
 #include "TaskInterface.h"
+#include "JobManagementPass.h"
 
 namespace ThreadsManagementSystemPassBreak {
-    class JobManagemetPassBruteForce : public JobManagementPass {
+
+
+    class JobManagemetPassBruteForce : virtual public JobManagementPass {
 
         using TaskInterface = ThreadsManagementSystem::TaskInterface;
     public:
         JobManagemetPassBruteForce(std::unique_ptr<const JobPass> &&job);
 
-        std::unique_ptr<const TaskInterface> getTask() override;
+        virtual std::unique_ptr< TaskInterface> getTask() override;
 
-    private:
-        std::unique_ptr<GeneratePass> nextTaskGenerator;
+        void nothing() override;
+
+    protected:
+        std::unique_ptr<GeneratePass> nextTaskGenerator {nullptr};
         const TypeNumberSteps maxNumberSteps = 0;
-        TypeLengthPassw currentLengthPassw {0};
+        TypeLengthPassw currentLengthPassw = 0;
 
 
-    private:
+    protected:
         void calculationMaxNumberSteps();
         void intializeCurrentLengthPassw();
         void updateStateJobInGetTask();
+
+    protected:
+        virtual void noHaveSate() override;
     };
 }
 

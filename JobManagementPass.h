@@ -6,17 +6,23 @@
 #define THREADSMANAGEMENTSYSTEM_JOBMANAGEMENTPASS_H
 
 #include "JobManagementInterface.h"
-#include "JobPass.h"
 #include "StateJobPass.h"
 #include "StateTaskPass.h"
 #include "MessageInterface.h"
+#include "JobPass.h"
 
 namespace ThreadsManagementSystemPassBreak {
-    class JobManagementPass : public ThreadsManagementSystem::JobManagementInterface {
+
+
+    class JobManagementPass : virtual public ThreadsManagementSystem::JobManagementInterface {
         using MessageInterface = ThreadsManagementSystem::MessageInterface;
 
     public:
         JobManagementPass( std::unique_ptr<const JobPass> &&job);
+
+        bool isSolutions() override;
+
+        std::unique_ptr<ThreadsManagementSystem::TaskInterface> getTask() override;
 
     protected:
         StateJobPass stateJob = StateJobPass(empty_TypeIdJob);
@@ -25,6 +31,7 @@ namespace ThreadsManagementSystemPassBreak {
         bool haveStateJob = false;
         bool haveTasks = true;
         bool haveMessage = false;
+        bool haveSolution = false;
         const std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
         double timeExcuteTask = 0.0;
         TypeIdTask idTask{first_TypeIdTask};
@@ -34,7 +41,7 @@ namespace ThreadsManagementSystemPassBreak {
         virtual void setTimeForStartInStateJob();
         virtual void noHaveTask();
         virtual void haveState();
-        virtual void noHaveSate();
+        virtual void noHaveSate() = 0;
         virtual void haveMessageF();
         virtual void noHaveMessageF();
         virtual void setTimeToEnd(double tasksToEnd);
@@ -59,7 +66,8 @@ namespace ThreadsManagementSystemPassBreak {
 
         TypeIdJob getIdJob() override;
 
-
+    public:
+        virtual void nothing() = 0;
 
     };
 }

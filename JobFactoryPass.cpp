@@ -67,3 +67,6 @@ void ThreadsManagementSystemPassBreak::JobFactoryPass::run() {
     }
 }
 
+ThreadsManagementSystemPassBreak::JobFactoryPass::JobFactoryPass(
+         std::unique_ptr<ConnectionApiInterface> &&apiConnect) : apiConnect(std::move(apiConnect)) {}
+

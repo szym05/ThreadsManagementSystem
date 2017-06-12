@@ -45,6 +45,10 @@ namespace ThreadsManagementSystem{
 
         void registerSlave(TypeIdSlave slave) override;
 
+        size_t getNumberStateTask() override;
+
+        TypeNumberSlave getNumberSlaveExecuteJob(TypeIdJob idJob) override;
+
 
     protected:
         SynchronizedQueue<TypeIdSlave> availableSlaves;

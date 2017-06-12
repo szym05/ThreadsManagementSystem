@@ -393,6 +393,54 @@ CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o.provides: CMakeFiles/T
 CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o
 
 
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../Master.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/Master.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/Master.cpp > CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/Master.cpp -o CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o
+
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o: CMakeFiles/ThreadsManagementSystem.dir/flags.make
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o: ../JobManagementFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o -c /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.cpp
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.cpp > CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.i
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.cpp -o CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.s
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.requires:
+
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.requires
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.provides: CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.provides
+
+CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.provides.build: CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o
+
+
 # Object files for target ThreadsManagementSystem
 ThreadsManagementSystem_OBJECTS = \
 "CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o" \
@@ -408,7 +456,9 @@ ThreadsManagementSystem_OBJECTS = \
 "CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteForce.cpp.o" \
 "CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o" \
 "CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o" \
-"CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o"
+"CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o" \
+"CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o"
 
 # External object files for target ThreadsManagementSystem
 ThreadsManagementSystem_EXTERNAL_OBJECTS =
@@ -427,12 +477,14 @@ ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/TaskPassBruteFor
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o
+ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/build.make
 ThreadsManagementSystem: /usr/lib/libQt5Widgets.so.5.8.0
 ThreadsManagementSystem: /usr/lib/libQt5Gui.so.5.8.0
 ThreadsManagementSystem: /usr/lib/libQt5Core.so.5.8.0
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ThreadsManagementSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ThreadsManagementSystem"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThreadsManagementSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -454,6 +506,8 @@ CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSys
 CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o.requires
 CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o.requires
 CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o.requires
+CMakeFiles/ThreadsManagementSystem.dir/requires: CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o.requires
 
 .PHONY : CMakeFiles/ThreadsManagementSystem.dir/requires
 
