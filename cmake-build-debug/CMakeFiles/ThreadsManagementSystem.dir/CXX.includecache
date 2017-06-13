@@ -85,6 +85,8 @@ ThreadInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
 ConnectionApiInterface.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiInterface.h
+Monitor.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobInterface.h
 memory
@@ -219,6 +221,8 @@ list
 -
 JobManagementFactory.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobManagementFactory.h
+Monitor.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/MasterInterface.h
 memory
@@ -231,6 +235,34 @@ memory
 -
 Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.cpp
+Monitor.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.h
+unordered_map
+-
+list
+-
+MonitorObject.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/MonitorObject.h
+MonitorThread.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/MonitorThread.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/MonitorObject.h
+string
+-
+Types.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/MonitorThread.h
+MonitorObject.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/MonitorObject.h
+list
+-
+unordered_map
+-
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp
 iostream
@@ -283,6 +315,8 @@ Slave.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.h
 VectorSlaves.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/VectorSlaves.h
+Monitor.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagementInterface.h
 TaskInterface.h

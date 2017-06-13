@@ -12,6 +12,7 @@
 #include <curses.h>
 
 
+
 void testSystem();
 
 int main() {
@@ -37,14 +38,29 @@ void testSystem(){
                TypeHash ::md5,
                "c83b2d5bb1fb4d93d9d064593ed6eea2|",
                TypeMethod ::brute_force,
-               std::make_unique<ThreadsManagementSystemPassBreak::Alphabet>("asdfghjk"),
+               std::make_unique<ThreadsManagementSystemPassBreak::Alphabet>("asdfghjklp"),
                1,
-               10,
-               100000000
+               4,
+               1000
+            )
+    );
+    connect->addJob(
+            std::make_unique<const ThreadsManagementSystemPassBreak::JobPass>(
+                    1,
+                    1,
+                    TypeHash ::md5,
+                    "c83b2d5bb1fb4d93d9d064593ed6eea2|",
+                    TypeMethod ::brute_force,
+                    std::make_unique<ThreadsManagementSystemPassBreak::Alphabet>("asdfghjklp"),
+                    1,
+                    4,
+                    1000
             )
     );
 
-    ThreadsManagementSystem::Master master {connect};
+    SystemMonitoring::Monitor monitor;
+
+    ThreadsManagementSystem::Master master(connect, monitor);
     if(!master.start()){
         std::cout << "\n\n ERROR START MASTER \n\n";
     }

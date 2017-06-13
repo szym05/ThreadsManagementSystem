@@ -37,7 +37,10 @@ namespace ThreadsManagementSystem {
     }
 
     void Master::getTaskFromJobManagement() {
+        std::unique_lock<std::mutex> lck1{mutJobs, std::defer_lock};
+        std::unique_lock<std::mutex> lck2{mutJobsExecutedWaitSolution, std::defer_lock};
         try {
+            std::lock(lck1, lck2);
             while ((slaveMenagment->getNumberAvaibleSlaves() > 0) && (jobs.size() > 0)) {
                 getTaskFromJobManagementAddToSlaveManagment();
             }
@@ -58,7 +61,10 @@ namespace ThreadsManagementSystem {
 
                 std::shared_ptr<JobManagementInterface> jobManagment = jobManagmnetFactory->getJobManagment(std::move(job));
 
+                std::unique_lock<std::mutex> lck{mutJobs};
                 jobs.push(jobManagment);
+                lck.unlock();
+                std::lock_guard<std::mutex> lck_Sol{mutJobsWaitSolution};
                 jobsWaitSolution.insert(std::make_pair<TypeIdJob, std::shared_ptr<JobManagementInterface>>
                                                 (jobManagment->getIdJob(), std::move(jobManagment)));
             }
@@ -76,6 +82,7 @@ namespace ThreadsManagementSystem {
 
                 std::unique_ptr<const StateTaskInterface> solution = slaveMenagment->getStateTask();
 
+                std::unique_lock<std::mutex> lck_Sol{mutJobsWaitSolution};
                 if(jobsWaitSolution.find(solution->getIdJob()) != jobsWaitSolution.end()) {
 
                     std::shared_ptr<JobManagementInterface> jobManagment = jobsWaitSolution[solution->getIdJob()];
@@ -89,8 +96,11 @@ namespace ThreadsManagementSystem {
                     if (jobManagment->isSolutions()) {
                         slaveMenagment->addMessage(jobManagment->getMessage());
                         jobsWaitSolution.erase(jobManagment->getIdJob());
+                        mutJobsWaitSolution.unlock();
+                        std::lock_guard<std::mutex> {mutJobsExecutedWaitSolution};
                         jobsExecutedWaitSolution.remove(jobManagment);
                     }
+                    mutJobsWaitSolution.unlock();
                 }
             }
         } catch (...) {
@@ -101,7 +111,10 @@ namespace ThreadsManagementSystem {
     }
 
     void Master::jobNotHaveSolution() {
+        std::unique_lock<std::mutex> lck1{mutJobsExecutedWaitSolution, std::defer_lock};
+        std::unique_lock<std::mutex> lck2{mutJobsWaitSolution, std::defer_lock};
         try {
+            std::lock(lck1, lck2);
             if (jobsExecutedWaitSolution.size() > 0) {
 
                 for (std::list<std::shared_ptr<JobManagementInterface>>::iterator it = jobsExecutedWaitSolution.begin();
@@ -129,9 +142,16 @@ namespace ThreadsManagementSystem {
 
     }
 
-    Master::Master(std::shared_ptr<ConnectionApiInterface> && connect) {
-        slaveMenagment = std::make_unique<SlaveManagement>(60);
-        dataBaseMenagment = std::make_unique<ThreadsManagementSystemPassBreak::JobFactoryPass>(connect);
+    Master::Master(std::shared_ptr<ConnectionApiInterface>  connect, SystemMonitoring::Monitor &monitor) {
+        slaveMenagment = std::make_unique<SlaveManagement>(60, monitor);
+        dataBaseMenagment = std::make_unique<ThreadsManagementSystemPassBreak::JobFactoryPass>(connect, monitor);
+
+        ///// MONITOR
+      /*  monitor.addMonitoredObjectParameter("Master", "Jobs_Priority_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobs}; return std::to_string(this->jobs.size());}));
+
+        monitor.addMonitoredObjectParameter("Master", "Jobs_Wait_Solution",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobsWaitSolution}; return std::to_string(this->jobsWaitSolution.size());}));
+
+        monitor.addMonitoredObjectParameter("Master", "Jobs_Executed_Wait_Solution",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobsExecutedWaitSolution}; return std::to_string(this->jobsExecutedWaitSolution.size());}));*/
     }
 
     bool Master::start() {

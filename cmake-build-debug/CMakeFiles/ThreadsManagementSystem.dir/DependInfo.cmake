@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/szymon/CLionProjects/ThreadsManagementSystem/JobManagemetPassBruteForce.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobManagemetPassBruteForce.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/JobRelatedSlaves.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/Master.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o"
+  "/home/szymon/CLionProjects/ThreadsManagementSystem/Monitor.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveManagement.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o"
   "/home/szymon/CLionProjects/ThreadsManagementSystem/SlaveRelatedTasks.cpp" "/home/szymon/CLionProjects/ThreadsManagementSystem/cmake-build-debug/CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o"

@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ThreadsManagementSystem.dir/VectorSlaves.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o"
   "CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o"
+  "CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o"
   "ThreadsManagementSystem.pdb"
   "ThreadsManagementSystem"
 )

@@ -33,6 +33,13 @@ enum class TypeStateTask : char{
     solution = 2
 };
 
+enum class TypeComponentNcurses : char{
+    empty = 0,
+    progress_bar = 1,
+    text_view = 2
+};
+
+
 
 template <typename Enumeration>
 auto as_integer(Enumeration const value)

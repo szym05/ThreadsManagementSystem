@@ -66,5 +66,12 @@ void ThreadsManagementSystemPassBreak::JobFactoryPass::run() {
 }
 
 ThreadsManagementSystemPassBreak::JobFactoryPass::JobFactoryPass(
-         std::shared_ptr<ConnectionApiInterface> &apiConnect) : apiConnect(apiConnect) {}
+         std::shared_ptr<ConnectionApiInterface> &apiConnect, SystemMonitoring::Monitor &monitor) : apiConnect(apiConnect) {
+
+    ////MONITOR
+    monitor.addMonitoredObjectParameter("JobFactory", "Jobs_To_Do_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->jobsToDo.size());}));
+
+    monitor.addMonitoredObjectParameter("JobFactory", "State_Jobs_To_Upload_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of state",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->stateJobsToUpload.size());}));
+
+}
 

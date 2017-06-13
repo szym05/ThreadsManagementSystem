@@ -366,6 +366,33 @@ Master.cpp.s:
 	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.s
 .PHONY : Master.cpp.s
 
+Monitor.o: Monitor.cpp.o
+
+.PHONY : Monitor.o
+
+# target to build an object file
+Monitor.cpp.o:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o
+.PHONY : Monitor.cpp.o
+
+Monitor.i: Monitor.cpp.i
+
+.PHONY : Monitor.i
+
+# target to preprocess a source file
+Monitor.cpp.i:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.i
+.PHONY : Monitor.cpp.i
+
+Monitor.s: Monitor.cpp.s
+
+.PHONY : Monitor.s
+
+# target to generate assembly for a file
+Monitor.cpp.s:
+	$(MAKE) -f CMakeFiles/ThreadsManagementSystem.dir/build.make CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.s
+.PHONY : Monitor.cpp.s
+
 Slave.o: Slave.cpp.o
 
 .PHONY : Slave.o
@@ -591,6 +618,9 @@ help:
 	@echo "... Master.o"
 	@echo "... Master.i"
 	@echo "... Master.s"
+	@echo "... Monitor.o"
+	@echo "... Monitor.i"
+	@echo "... Monitor.s"
 	@echo "... Slave.o"
 	@echo "... Slave.i"
 	@echo "... Slave.s"

@@ -13,6 +13,7 @@
 #include "SlaveInterface.h"
 #include "Slave.h"
 #include "VectorSlaves.h"
+#include "Monitor.h"
 
 namespace ThreadsManagementSystem{
 
@@ -27,7 +28,7 @@ namespace ThreadsManagementSystem{
 
 
     public:
-        SlaveManagement(TypeNumberSlave numberSlave);
+        SlaveManagement(TypeNumberSlave numberSlave, SystemMonitoring::Monitor &monitor);
 
         void addTask(std::unique_ptr<TaskInterface> &&task) override;
 

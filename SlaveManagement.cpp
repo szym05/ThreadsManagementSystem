@@ -139,7 +139,7 @@ namespace ThreadsManagementSystem {
     }
 
 
-    SlaveManagement::SlaveManagement(TypeNumberSlave numberSlave) {
+    SlaveManagement::SlaveManagement(TypeNumberSlave numberSlave, SystemMonitoring::Monitor &monitor) {
 
         using std::placeholders::_1;
         using std::placeholders::_2;
@@ -158,6 +158,21 @@ namespace ThreadsManagementSystem {
                 addSlaveToAvailable,
                 registerSlave
         );
+
+        ////MONITOR
+        /*monitor.addMonitoredObjectParameter("SlaveManagement", "Available_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of slaves",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->availableSlaves.size());}));
+
+        monitor.addMonitoredObjectParameter("SlaveManagement", "Job_Related_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of job",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->jobRelatedSlaves.size());}));
+
+        monitor.addMonitoredObjectParameter("SlaveManagement", "Vector_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of slaves",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->vecSlaves->size());}));
+
+        monitor.addMonitoredObjectParameter("SlaveManagement", "Vector_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of slaves",TypeComponentNcurses ::progress_bar, [this]()->std::string{ return std::to_string(1.0 - (this->availableSlaves.size()/(double)this->vecSlaves->size()));}));
+
+        monitor.addMonitoredObjectParameter("SlaveManagement", "Send_Task_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of task",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->sendTaskQueue.size());}));
+
+        monitor.addMonitoredObjectParameter("SlaveManagement", "Send_Message_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of message",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->sendMessageInterfaceQueue.size());}));
+
+        monitor.addMonitoredObjectParameter("SlaveManagement", "State_Tasks_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of task",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->stateTasks.size());}));*/
     }
 
 }

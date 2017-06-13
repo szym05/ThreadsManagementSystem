@@ -6,6 +6,7 @@
 #include "JobInterface.h"
 #include "ThreadInterface.h"
 #include "ConnectionApiInterface.h"
+#include "Monitor.h"
 
 using ThreadsManagementSystem::JobInterface;
 using ThreadsManagementSystem::SynchronizedQueue;
@@ -20,7 +21,7 @@ namespace ThreadsManagementSystemPassBreak {
 
     class JobFactoryPass : public JobFactoryInterface {
     public:
-        JobFactoryPass( std::shared_ptr<ConnectionApiInterface> &apiConnect);
+        JobFactoryPass( std::shared_ptr<ConnectionApiInterface> &apiConnect, SystemMonitoring::Monitor &monitor);
 
         using JobInterface = ThreadsManagementSystem::JobInterface;
         using StateJobInterface =ThreadsManagementSystem::StateJobInterface;

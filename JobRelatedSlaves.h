@@ -39,6 +39,8 @@ namespace ThreadsManagementSystem {
 
         double getTimeTaskExecute(TypeIdJob idJob);
 
+        size_t size();
+
     };
 }
 

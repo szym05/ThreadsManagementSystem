@@ -5,6 +5,10 @@
 #include "JobRelatedSlaves.h"
 namespace ThreadsManagementSystem {
 
+    size_t JobRelatedSlaves::size() {
+        return jobRelatedSlaves.size();
+    }
+
     TypeNumberSlave JobRelatedSlaves::numberSlaveExecuteTaskWithJob(TypeIdJob idJob) {
         std::unique_lock<std::mutex> mlock(mut);
 
