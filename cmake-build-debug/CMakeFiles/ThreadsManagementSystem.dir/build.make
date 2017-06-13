@@ -481,6 +481,8 @@ ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/JobManagementFactory.cpp.o
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/build.make
 ThreadsManagementSystem: /usr/lib/libQt5Widgets.so.5.8.0
+ThreadsManagementSystem: /usr/lib64/libcurses.so
+ThreadsManagementSystem: /usr/lib64/libform.so
 ThreadsManagementSystem: /usr/lib/libQt5Gui.so.5.8.0
 ThreadsManagementSystem: /usr/lib/libQt5Core.so.5.8.0
 ThreadsManagementSystem: CMakeFiles/ThreadsManagementSystem.dir/link.txt

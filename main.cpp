@@ -9,7 +9,7 @@
 #include "ConnectionApiPass.h"
 #include "JobPass.h"
 #include "Master.h"
-
+#include <curses.h>
 
 
 void testSystem();
@@ -35,7 +35,7 @@ void testSystem(){
                1,
                1,
                TypeHash ::md5,
-               "c83b2d5bb1fb4d93d9d064593ed6eea2",
+               "c83b2d5bb1fb4d93d9d064593ed6eea2|",
                TypeMethod ::brute_force,
                std::make_unique<ThreadsManagementSystemPassBreak::Alphabet>("asdfghjk"),
                1,
@@ -51,7 +51,7 @@ void testSystem(){
 
     while(true){
         std::this_thread::sleep_for (std::chrono::seconds(1));
-        if(connect->getNumberStateJob()){
+        if(connect->getNumberStateJob() > 0){
             auto stateJob = connect->getStateJob();
             std::cout << "\n\n Main " << *stateJob << "\n\n";
             if(stateJob->getProgress() == 1.0)return;

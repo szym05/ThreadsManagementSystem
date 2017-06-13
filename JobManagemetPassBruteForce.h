@@ -28,12 +28,15 @@ namespace ThreadsManagementSystemPassBreak {
         std::unique_ptr<GeneratePass> nextTaskGenerator {nullptr};
         const TypeNumberSteps maxNumberSteps = 0;
         TypeLengthPassw currentLengthPassw = 0;
+        TypeLengthPassw currentLengthStateTask = 0;
 
 
     protected:
         void calculationMaxNumberSteps();
         void intializeCurrentLengthPassw();
         void updateStateJobInGetTask();
+
+        void addSatateTask(std::unique_ptr<const ThreadsManagementSystem::StateTaskInterface> &&stateTask) override;
 
     };
 }

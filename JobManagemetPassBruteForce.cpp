@@ -24,44 +24,13 @@ void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::intializeCurr
 
 
 
-void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::updateStateJobInGetTask() {
-    haveState();
-
-    double tasksToEnd = (double)(maxNumberSteps - stateJob.getNumberExecutedSteps()) / (double) job->getResolutionStepTask();
-
-    setTimeToEnd(tasksToEnd);
-
-
-    stateJob.addnumberExecutedStep(job->getResolutionStepTask());
-    if(stateJob.getNumberExecutedSteps() >= maxNumberSteps){
-        stateJob.setNumberExecutedSteps(maxNumberSteps);
-        noHaveTask();
-        stateJob.setTimeEnd(0.0);
-    }
-
-
-    const double doubMaxNumberSteps = maxNumberSteps + 0.01 * (double)maxNumberSteps;
-
-    double progresss =(double)stateJob.getNumberExecutedSteps()/doubMaxNumberSteps;
-    std::cout << "\n\n PROGRES => " << progresss << " MAX STEPS " <<  maxNumberSteps  << "\n\n";
-    stateJob.setProgress(progresss);
-
-    if(nextTaskGenerator->size() > currentLengthPassw){
-        stateJob.setLengthOfCheckedPasswords(currentLengthPassw);
-        currentLengthPassw = (TypeLengthPassw)nextTaskGenerator->size();
-    }
-
-    setTimeForStartInStateJob();
-}
-
-
 
 
 std::unique_ptr< ThreadsManagementSystem::TaskInterface>
 ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::getTask() {
-    if(stateJob.getNumberExecutedSteps() >= maxNumberSteps)
+    if(!nextTaskGenerator->next())
     {
-        throw std::out_of_range("JobManagment: The NumberStep is out of range the maxNumberSteps");
+        noHaveTask();
     }
 
     auto passwordBeginSearch = std::make_unique<GeneratePass>(*nextTaskGenerator);
@@ -82,8 +51,6 @@ ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::getTask() {
 
     nextTaskGenerator->next(job->getResolutionStepTask() + 1);
 
-    updateStateJobInGetTask();
-
     ++numberTaskSend;
 
     return task;
@@ -97,3 +64,55 @@ ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::JobManagemetPassBr
     nextTaskGenerator = std::make_unique<GeneratePass>(maxNumberSteps,this->job->getAlphabet()->size());
 }
 
+
+
+
+
+void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::updateStateJobInGetTask() {
+    haveState();
+
+    double tasksToEnd = (double)(maxNumberSteps - stateJob.getNumberExecutedSteps()) / (double) job->getResolutionStepTask();
+
+    setTimeToEnd(tasksToEnd);
+
+
+    stateJob.addnumberExecutedStep(job->getResolutionStepTask());
+    if(stateJob.getNumberExecutedSteps() >= maxNumberSteps){
+        stateJob.setNumberExecutedSteps(maxNumberSteps);
+        noHaveTask();
+        stateJob.setTimeEnd(0.0);
+    }
+
+
+    const double doubMaxNumberSteps = maxNumberSteps + 0.01 * (double)maxNumberSteps;
+
+    double progresss =(double)stateJob.getNumberExecutedSteps()/doubMaxNumberSteps;
+    std::cout << "\n\n PROGRES => " << progresss << " MAX STEPS " <<  maxNumberSteps  <<  "\n\n";
+    stateJob.setProgress(progresss);
+
+
+    if(currentLengthStateTask >= currentLengthPassw){
+        stateJob.setLengthOfCheckedPasswords(currentLengthPassw);
+        currentLengthPassw = currentLengthStateTask;
+        //std::cout << "\n\n LengPass " << currentLengthPassw << " " << nextTaskGenerator->size() << "\n\n";
+    }
+
+    setTimeForStartInStateJob();
+}
+
+
+
+
+
+
+void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::addSatateTask(
+        std::unique_ptr<const ThreadsManagementSystem::StateTaskInterface> &&stateTask) {
+        const StateTaskPass* stateTaspPtr = dynamic_cast<const StateTaskPass*>(stateTask.get());
+
+        if(stateTaspPtr != nullptr) {
+            currentLengthStateTask = stateTaspPtr->getCurrentLengthPassw();
+        }
+
+    updateStateJobInGetTask();
+    JobManagementPass::addSatateTask(std::move(stateTask));
+}

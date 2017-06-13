@@ -439,6 +439,8 @@ JobPass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
 Master.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
+curses.h
+-
 
 /usr/include/qt/QtCore/QCryptographicHash
 qcryptographichash.h

@@ -78,7 +78,7 @@ void ThreadsManagementSystemPassBreak::JobManagementPass::addSatateTask(
         else{
             std::cout << " \n\n JobManagementPass error bad cast in function addSatateTask \n\n ";
         }
-    } else if(stateTask->getState() == TypeStateTask::state){
+    } else if(stateTask->getState() == TypeStateTask::state) {
         ++numberTaskExecuted;
     }
 }

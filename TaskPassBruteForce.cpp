@@ -8,7 +8,7 @@
 std::unique_ptr<ThreadsManagementSystem::StateTaskInterface>
 ThreadsManagementSystemPassBreak::TaskPassBruteForce::getStateTask() {
     std::lock_guard<std::mutex> lck{mBlock};
-    return std::make_unique<StateTaskPass>(idJob, idTask, state, solution, numberStepsExecuted);
+    return std::make_unique<StateTaskPass>(idJob, idTask, state, solution, numberStepsExecuted, currentLengthPassw);
 }
 
 void ThreadsManagementSystemPassBreak::TaskPassBruteForce::terminate() {
@@ -77,6 +77,7 @@ void ThreadsManagementSystemPassBreak::TaskPassBruteForce::passBreakMd5() {
        }
        ++(*nextPass);
    }
+    currentLengthPassw = nextPass->size();
 }
 
 

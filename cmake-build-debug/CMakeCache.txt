@@ -173,6 +173,21 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a library.
+CURSES_CURSES_LIBRARY:FILEPATH=/usr/lib64/libcurses.so
+
+//Path to a library.
+CURSES_FORM_LIBRARY:FILEPATH=/usr/lib64/libform.so
+
+//Path to a file.
+CURSES_INCLUDE_PATH:PATH=/usr/include
+
+//Path to a library.
+CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib64/libncurses.so
+
+//The directory containing a CMake configuration file for Ncurses.
+Ncurses_DIR:PATH=Ncurses_DIR-NOTFOUND
+
+//Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib64/libcrypto.so
 
 //Path to a file.
@@ -835,6 +850,12 @@ ThreadsManagementSystem_BINARY_DIR:STATIC=/home/szymon/CLionProjects/ThreadsMana
 //Value Computed by CMake
 ThreadsManagementSystem_SOURCE_DIR:STATIC=/home/szymon/CLionProjects/ThreadsManagementSystem
 
+//The directory containing a CMake configuration file for curses.
+curses_DIR:PATH=curses_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for ncurses.
+ncurses_DIR:PATH=ncurses_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
@@ -973,6 +994,14 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURSES_CURSES_LIBRARY
+CURSES_CURSES_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURSES_INCLUDE_PATH
+CURSES_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURSES_NCURSES_LIBRARY
+CURSES_NCURSES_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding Curses
+FIND_PACKAGE_MESSAGE_DETAILS_Curses:INTERNAL=[/usr/lib64/libcurses.so][/usr/include][v()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib64/libssl.so;/usr/lib64/libcrypto.so][/usr/include][v1.0.2k()]
 //Details about finding Qt4

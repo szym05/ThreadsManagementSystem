@@ -30,7 +30,7 @@ namespace ThreadsManagementSystem {
 
         void getJobFromDataBaseMenagment();
 
-        void getSolutionFromSlaveManagment();
+        void getSolutionTaskFromSlaveManagment();
 
         void jobNotHaveSolution();
 

@@ -8,10 +8,20 @@
 namespace ThreadsManagementSystemPassBreak {
     class StateTaskPass : public ThreadsManagementSystem::StateTaskInterface {
     public:
-        StateTaskPass(TypeIdJob idJob, TypeIdTask idTask, TypeStateTask state, const TypeSolution &solution,
-                      TypeNumberSteps numberStepsExecuted) : StateTaskInterface(idJob, idTask, state),
-                                                             solution(solution),
-                                                             numberStepsExecuted(numberStepsExecuted) {}
+        StateTaskPass(TypeIdJob idJob,
+                      TypeIdTask idTask,
+                      TypeStateTask state,
+                      const TypeSolution &solution,
+                      TypeNumberSteps numberStepsExecuted,
+                      TypeLengthPassw currentLengthPassw)
+                :
+                StateTaskInterface(
+                idJob,
+                idTask,
+                state),
+                solution(solution),
+                numberStepsExecuted(numberStepsExecuted),
+                currentLengthPassw(currentLengthPassw) {}
 
         StateTaskPass(TypeStateTask state) : StateTaskInterface(state) {}
 
@@ -27,9 +37,14 @@ namespace ThreadsManagementSystemPassBreak {
             return numberStepsExecuted;
         }
 
+        TypeLengthPassw getCurrentLengthPassw() const {
+            return currentLengthPassw;
+        }
+
     protected:
         TypeSolution solution {empty_TypeSolution};
         TypeNumberSteps numberStepsExecuted {};
+        TypeLengthPassw currentLengthPassw {0};
     };
 }
 

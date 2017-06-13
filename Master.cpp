@@ -10,7 +10,7 @@ namespace ThreadsManagementSystem {
         while (tRunning) {
             getJobFromDataBaseMenagment();
             getTaskFromJobManagement();
-            getSolutionFromSlaveManagment();
+            getSolutionTaskFromSlaveManagment();
 
             jobNotHaveSolution();
 
@@ -23,7 +23,9 @@ namespace ThreadsManagementSystem {
             if (jobs.top()->isTask()) {
                 slaveMenagment->addTask(jobs.top()->getTask());
                 ///UpLoad state job to frotend
+#ifdef DEBUG_SYSTEM_CONSOL
                 dataBaseMenagment->addStateJob(std::move(jobs.top()->getState()));
+#endif
             }
             else
             {
@@ -68,7 +70,7 @@ namespace ThreadsManagementSystem {
     }
 
 /**********************************************************************************************/
-    void Master::getSolutionFromSlaveManagment() {
+    void Master::getSolutionTaskFromSlaveManagment() {
         try {
             if (slaveMenagment->getNumberStateTask() > 0) {
 
@@ -83,6 +85,7 @@ namespace ThreadsManagementSystem {
                     jobManagment->addSatateTask(std::move(solution));
 
                     dataBaseMenagment->addStateJob(jobManagment->getState());
+
                     if (jobManagment->isSolutions()) {
                         slaveMenagment->addMessage(jobManagment->getMessage());
                         jobsWaitSolution.erase(jobManagment->getIdJob());
@@ -91,7 +94,7 @@ namespace ThreadsManagementSystem {
                 }
             }
         } catch (...) {
-            std::cout << " \n\n Exception in Master in getSolutionFromSlaveManagment ";
+            std::cout << " \n\n Exception in Master in getSolutionTaskFromSlaveManagment ";
             std::exception_ptr p = std::current_exception();
             std::clog << (p ? p.__cxa_exception_type()->name() : "null") << std::endl;
         }

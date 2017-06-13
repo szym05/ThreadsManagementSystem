@@ -39,7 +39,7 @@ namespace ThreadsManagementSystemPassBreak {
 
     protected:
         std::unique_ptr<GeneratePass> nextPass;
-
+        TypeLengthPassw currentLengthPassw {0};
 
         void passBreakMd5();
     };
