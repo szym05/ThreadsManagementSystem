@@ -7,6 +7,7 @@
 
 namespace ThreadsManagementSystem {
     void Master::run() {
+        std::unique_lock<std::mutex> lck {mutMaster};
         while (tRunning) {
             getJobFromDataBaseMenagment();
             getTaskFromJobManagement();
@@ -15,6 +16,7 @@ namespace ThreadsManagementSystem {
             jobNotHaveSolution();
 
             std::this_thread::sleep_for(std::chrono::seconds(interval));
+            //conMaster.wait(lck, [this]()->bool{return (!this->tRunning || ((this->slaveMenagment->getNumberAvaibleSlaves()) && (this->jobs.size() > 0)) || (this->dataBaseMenagment->getNumberJob() > 0) || (this->slaveMenagment->getNumberStateTask() > 0));});
         }
     }
 

@@ -26,6 +26,8 @@ namespace ThreadsManagementSystem {
         std::mutex mutJobsExecutedWaitSolution;
         std::list<std::shared_ptr<JobManagementInterface>> jobsExecutedWaitSolution;
 
+        std::mutex mutMaster;
+        std::condition_variable conMaster;
 
         void getTaskFromJobManagementAddToSlaveManagment();
 

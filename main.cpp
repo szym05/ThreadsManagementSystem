@@ -160,17 +160,17 @@ int testNcurses() {
 
 std::unique_ptr<const ThreadsManagementSystemPassBreak::JobPass> addJobMain(size_t  & row){
     static size_t idJob = 2;
-    //SystemMonitoring::
-
+    std::string hash = SystemMonitoring::NcursesWrapper::EnterString(row, 0,"Enter MD5 hash", 200);
+    std::string alphabet = SystemMonitoring::NcursesWrapper::EnterString(++row, 0,"Enter alphabet of pass", 200);
 
 
     return      std::make_unique<const ThreadsManagementSystemPassBreak::JobPass>(
             ++idJob,
             1,
             TypeHash ::md5,
-            "c83b2d5bb1fb4d93d9d064593ed6eea2|",
+            hash,
             TypeMethod ::brute_force,
-            std::make_unique<ThreadsManagementSystemPassBreak::Alphabet>("asdfghjklp"),
+            std::make_unique<ThreadsManagementSystemPassBreak::Alphabet>(alphabet),
             1,
             8,
             10000000
