@@ -78,7 +78,7 @@ namespace ThreadsManagementSystem {
 /**********************************************************************************************/
     void Master::getSolutionTaskFromSlaveManagment() {
         try {
-            if (slaveMenagment->getNumberStateTask() > 0) {
+            while (slaveMenagment->getNumberStateTask() > 0) {
 
                 std::unique_ptr<const StateTaskInterface> solution = slaveMenagment->getStateTask();
 
@@ -96,11 +96,11 @@ namespace ThreadsManagementSystem {
                     if (jobManagment->isSolutions()) {
                         slaveMenagment->addMessage(jobManagment->getMessage());
                         jobsWaitSolution.erase(jobManagment->getIdJob());
-                        mutJobsWaitSolution.unlock();
+                        lck_Sol.unlock();
                         std::lock_guard<std::mutex> {mutJobsExecutedWaitSolution};
                         jobsExecutedWaitSolution.remove(jobManagment);
                     }
-                    mutJobsWaitSolution.unlock();
+                    lck_Sol.unlock();
                 }
             }
         } catch (...) {
@@ -121,7 +121,7 @@ namespace ThreadsManagementSystem {
                      it != jobsExecutedWaitSolution.end(); ++it) {
 
                     if ((*it)->hasExecuted()) {
-                        std::cout << "\n\n Has EXECUTED ";
+                       // std::cout << "\n\n Has EXECUTED ";
                         std::unique_ptr<const StateTaskInterface> solution = std::make_unique<const ThreadsManagementSystemPassBreak::StateTaskPass>(TypeStateTask::solution);
 
                         (*it)->addSatateTask(std::move(solution));
@@ -147,11 +147,11 @@ namespace ThreadsManagementSystem {
         dataBaseMenagment = std::make_unique<ThreadsManagementSystemPassBreak::JobFactoryPass>(connect, monitor);
 
         ///// MONITOR
-      /*  monitor.addMonitoredObjectParameter("Master", "Jobs_Priority_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobs}; return std::to_string(this->jobs.size());}));
+        monitor.addMonitoredObjectParameter("Master", "Jobs_Priority_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobs}; return std::to_string(this->jobs.size());}));
 
         monitor.addMonitoredObjectParameter("Master", "Jobs_Wait_Solution",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobsWaitSolution}; return std::to_string(this->jobsWaitSolution.size());}));
 
-        monitor.addMonitoredObjectParameter("Master", "Jobs_Executed_Wait_Solution",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobsExecutedWaitSolution}; return std::to_string(this->jobsExecutedWaitSolution.size());}));*/
+        monitor.addMonitoredObjectParameter("Master", "Jobs_Executed_Wait_Solution",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of jobs",TypeComponentNcurses ::text_view, [this]()->std::string{std::lock_guard<std::mutex>{this->mutJobsExecutedWaitSolution}; return std::to_string(this->jobsExecutedWaitSolution.size());}));
     }
 
     bool Master::start() {

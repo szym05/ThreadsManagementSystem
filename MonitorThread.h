@@ -8,6 +8,7 @@
 #include "MonitorObject.h"
 #include <list>
 #include <unordered_map>
+#include "NcursesWrapper.h"
 
 namespace SystemMonitoring {
     class MonitorThread {
@@ -16,6 +17,16 @@ namespace SystemMonitoring {
     public:
         void addMonitoredObjectParameter(const std::string nameObject, std::unique_ptr<const MonitorObject> && parametr){
             mapMonitoringObjects[nameObject].push_back(std::move(parametr));
+        }
+
+        void display(size_t &row){
+            for (auto it = mapMonitoringObjects.begin(); it != mapMonitoringObjects.end(); ++it ) {
+                SystemMonitoring::NcursesWrapper::TextView(row, 0, "Object", it->first);
+                ++row;
+                for (auto it_2 = it->second.begin(); it_2 != it->second.end(); ++it_2 ) {
+                    (*it_2)->display(row);
+                }
+            }
         }
 
     };

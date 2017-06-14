@@ -126,7 +126,7 @@ namespace ThreadsManagementSystem {
     }
 
     void SlaveManagement::messageTerminateAllSlave(TypeIdJob idJob) {
-        std::cout << "\n\n\n TERMINATE SLAVES FOR JOB " << idJob << "\n\n\n";
+        //std::cout << "\n\n\n TERMINATE SLAVES FOR JOB " << idJob << "\n\n\n";
         auto list = jobRelatedSlaves.getListJobRelatedSlaves(idJob);
         jobRelatedSlaves.removeAll(idJob);
 
@@ -160,7 +160,7 @@ namespace ThreadsManagementSystem {
         );
 
         ////MONITOR
-        /*monitor.addMonitoredObjectParameter("SlaveManagement", "Available_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of slaves",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->availableSlaves.size());}));
+        monitor.addMonitoredObjectParameter("SlaveManagement", "Available_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of slaves",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->availableSlaves.size());}));
 
         monitor.addMonitoredObjectParameter("SlaveManagement", "Job_Related_Slaves",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of job",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->jobRelatedSlaves.size());}));
 
@@ -172,7 +172,7 @@ namespace ThreadsManagementSystem {
 
         monitor.addMonitoredObjectParameter("SlaveManagement", "Send_Message_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of message",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->sendMessageInterfaceQueue.size());}));
 
-        monitor.addMonitoredObjectParameter("SlaveManagement", "State_Tasks_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of task",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->stateTasks.size());}));*/
+        monitor.addMonitoredObjectParameter("SlaveManagement", "State_Tasks_Queue",  std::make_unique<const SystemMonitoring::MonitorObject>("Number of task",TypeComponentNcurses ::text_view, [this]()->std::string{ return std::to_string(this->stateTasks.size());}));
     }
 
 }

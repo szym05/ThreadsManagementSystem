@@ -87,7 +87,7 @@ void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::updateStateJo
     const double doubMaxNumberSteps = maxNumberSteps + 0.01 * (double)maxNumberSteps;
 
     double progresss =(double)stateJob.getNumberExecutedSteps()/doubMaxNumberSteps;
-    std::cout << "\n\n PROGRES => " << progresss << " MAX STEPS " <<  maxNumberSteps  <<  "\n\n";
+    //std::cout << "\n\n PROGRES => " << progresss << " MAX STEPS " <<  maxNumberSteps  <<  "\n\n";
     stateJob.setProgress(progresss);
 
 
@@ -98,6 +98,7 @@ void ThreadsManagementSystemPassBreak::JobManagemetPassBruteForce::updateStateJo
     }
 
     setTimeForStartInStateJob();
+
 }
 
 

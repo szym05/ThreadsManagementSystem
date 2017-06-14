@@ -249,12 +249,20 @@ MonitorObject.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/MonitorObject.h
 MonitorThread.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/MonitorThread.h
+NcursesWrapper.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/NcursesWrapper.h
+ThreadInterface.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/ThreadInterface.h
+ConnectionApiPass.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/ConnectionApiPass.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/MonitorObject.h
 string
 -
 Types.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Types.h
+NcursesWrapper.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/NcursesWrapper.h
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/MonitorThread.h
 MonitorObject.h
@@ -262,6 +270,14 @@ MonitorObject.h
 list
 -
 unordered_map
+-
+NcursesWrapper.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/NcursesWrapper.h
+
+/home/szymon/CLionProjects/ThreadsManagementSystem/NcursesWrapper.h
+string
+-
+ncurses.h
 -
 
 /home/szymon/CLionProjects/ThreadsManagementSystem/Slave.cpp
@@ -473,7 +489,9 @@ JobPass.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/JobPass.h
 Master.h
 /home/szymon/CLionProjects/ThreadsManagementSystem/Master.h
-curses.h
+NcursesWrapper.h
+/home/szymon/CLionProjects/ThreadsManagementSystem/NcursesWrapper.h
+ncurses.h
 -
 
 /usr/include/qt/QtCore/QCryptographicHash

@@ -19,7 +19,7 @@ bool ThreadsManagementSystem::VectorSlaves::start(TypeIdSlave slave,
                                                   std::unique_ptr<ThreadsManagementSystem::TaskInterface> &&task) {
 
     std::unique_lock<std::mutex> lck{mut};
-    std::cout<< "\n Start Slave " << slave;
+    //std::cout<< "\n Start Slave " << slave;
     return (*vecSlaves)[slave].start(std::move(task));
 }
 

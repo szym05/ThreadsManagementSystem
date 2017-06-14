@@ -27,17 +27,22 @@ CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o: ../GeneratePass.cpp
 CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o: ../GeneratePass.h
 CMakeFiles/ThreadsManagementSystem.dir/GeneratePass.cpp.o: ../TypesPassBreak.h
 
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../Alphabet.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../ConnectionApiInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../ConnectionApiPass.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobFactoryInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobFactoryPass.cpp
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobFactoryPass.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobManagementInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../JobPass.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../Monitor.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../MonitorObject.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../MonitorThread.h
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../NcursesWrapper.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../StateJobInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../StateJobPass.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../StateTaskInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../SynchronizedQueue.h
 CMakeFiles/ThreadsManagementSystem.dir/JobFactoryPass.cpp.o: ../TaskInterface.h
@@ -181,6 +186,7 @@ CMakeFiles/ThreadsManagementSystem.dir/JobRelatedSlaves.cpp.o: ../Types.h
 
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../Alphabet.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../ConnectionApiInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../ConnectionApiPass.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../GenerateHashPass.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../GeneratePass.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../JobFactoryInterface.h
@@ -200,6 +206,7 @@ CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../Monitor.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../MonitorObject.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../MonitorThread.h
+CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../NcursesWrapper.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../Slave.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../SlaveInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: ../SlaveManagement.h
@@ -251,11 +258,26 @@ CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: /usr/include/qt/QtCore/qtyp
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: /usr/include/qt/QtCore/qtypetraits.h
 CMakeFiles/ThreadsManagementSystem.dir/Master.cpp.o: /usr/include/qt/QtCore/qversiontagging.h
 
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../Alphabet.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../ConnectionApiInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../ConnectionApiPass.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../JobInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../JobManagementInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../JobPass.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../Monitor.cpp
 CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../Monitor.h
 CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../MonitorObject.h
 CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../MonitorThread.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../NcursesWrapper.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../StateJobInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../StateJobPass.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../StateTaskInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../SynchronizedQueue.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../TaskInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../ThreadInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../Types.h
+CMakeFiles/ThreadsManagementSystem.dir/Monitor.cpp.o: ../TypesPassBreak.h
 
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../Slave.cpp
@@ -266,11 +288,18 @@ CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../TaskInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../ThreadInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/Slave.cpp.o: ../Types.h
 
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../Alphabet.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../ConnectionApiInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../ConnectionApiPass.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../JobInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../JobManagementInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../JobPass.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../JobRelatedSlaves.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../Monitor.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../MonitorObject.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../MonitorThread.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../NcursesWrapper.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../Slave.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagement.cpp
@@ -278,11 +307,13 @@ CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagement
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveManagementInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SlaveRelatedTasks.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../StateJobInterface.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../StateJobPass.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../StateTaskInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../SynchronizedQueue.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../TaskInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../ThreadInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../Types.h
+CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../TypesPassBreak.h
 CMakeFiles/ThreadsManagementSystem.dir/SlaveManagement.cpp.o: ../VectorSlaves.h
 
 CMakeFiles/ThreadsManagementSystem.dir/SlaveRelatedTasks.cpp.o: ../SlaveRelatedTasks.cpp
@@ -368,6 +399,7 @@ CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../MessageInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../Monitor.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../MonitorObject.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../MonitorThread.h
+CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../NcursesWrapper.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../Slave.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../SlaveInterface.h
 CMakeFiles/ThreadsManagementSystem.dir/main.cpp.o: ../SlaveManagementInterface.h

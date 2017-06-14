@@ -7,6 +7,7 @@
 
 #include <string>
 #include "Types.h"
+#include "NcursesWrapper.h"
 
 namespace SystemMonitoring {
 
@@ -44,6 +45,18 @@ namespace SystemMonitoring {
             return functionMonitorObject();
 
         }
+
+        void display(size_t & row)const {
+            switch (componentNcurses)
+            {
+                case TypeComponentNcurses ::text_view: SystemMonitoring::NcursesWrapper::TextView(row, 0, name, functionMonitorObject());
+                    break;
+                case TypeComponentNcurses ::progress_bar: SystemMonitoring::NcursesWrapper::ProgressBar(row, 0,  stod(functionMonitorObject()));
+                    break;
+            }
+            ++row;
+        }
+
 
         ///CPNSTRUCTORS
         MonitorObject(const std::string &name,

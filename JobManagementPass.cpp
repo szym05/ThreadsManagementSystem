@@ -64,7 +64,7 @@ void ThreadsManagementSystemPassBreak::JobManagementPass::addSatateTask(
     if(stateTask->getState() == TypeStateTask::solution) {
         const StateTaskPass* stateTaspPtr = dynamic_cast<const StateTaskPass*>(stateTask.release());
         if(stateTaspPtr != nullptr) {
-            std::cout << "\n\n JobManagement Reciv solution => " << stateTaspPtr->getSolution() << "\n\n" ;
+          //  std::cout << "\n\n JobManagement Reciv solution => " << stateTaspPtr->getSolution() << "\n\n" ;
 
             std::unique_ptr<const StateTaskPass> stateTask_P{stateTaspPtr};
             noHaveTask();

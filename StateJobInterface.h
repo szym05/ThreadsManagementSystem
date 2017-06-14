@@ -14,6 +14,9 @@ namespace ThreadsManagementSystem {
             StateJobInterface::idJob = idJob;
         }
 
+        virtual std::string toString() const= 0 ;
+        virtual double getProgress() const= 0 ;
+
     protected:
         TypeIdJob idJob {};
     };

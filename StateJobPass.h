@@ -34,7 +34,7 @@ namespace ThreadsManagementSystemPassBreak {
         }
 
 
-        double getProgress() const {
+        double getProgress() const override {
             return progress;
         }
 
@@ -86,6 +86,14 @@ namespace ThreadsManagementSystemPassBreak {
         void addnumberExecutedStep(TypeNumberSteps resolutionSteps){
             numberExecutedSteps += resolutionSteps;
         }
+
+        std::string toString() const override  {
+            return std::string("id: "+ std::to_string(idJob) + " progress: "
+                    + std::to_string(progress ) +  " timeEnd: "     + std::to_string(timeEnd ) +  " timeReal: "     + std::to_string(timeReal ) +  " solution: "
+                                                                                                                                                   + solution + " numberExecutedSteps: "     + std::to_string(numberExecutedSteps ) +  " lengthOfCheckedPasswords: "
+                                                                                                                                                                                                                                       + std::to_string(lengthOfCheckedPasswords ) );
+        }
+
 
     protected:
         double progress {};
